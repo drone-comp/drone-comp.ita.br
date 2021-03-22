@@ -1,22 +1,15 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: An Analysis on Tradable Permit Models for Last-Mile Delivery Drones
+title: A runtime reconfiguration design targeting avionics systems
 subtitle: ''
 summary: ''
 authors:
-- verri
-- C. A. C. Marcondes
 - D. S. Loubach
-- E. F. Sbruzzi
-- J. C. Marques
-- L. A. P. Júnior
-- M. R. Omena De Albuquerque Maximo
-- V. V. Curtis
 tags: []
 categories: []
-date: '2020-01-01'
-lastmod: 2021-03-22T10:36:16-03:00
+date: '2016-01-01'
+lastmod: 2021-03-22T11:20:12-03:00
 featured: false
 draft: false
 
@@ -34,10 +27,10 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2021-03-22T13:36:00.303972Z'
+publishDate: '2021-03-22T14:20:12.824323Z'
 publication_types:
-- '2'
+- '1'
 abstract: ''
-publication: '*IEEE Access*'
-doi: 10.1109/ACCESS.2020.3030612
+publication: '*2016 IEEE/AIAA 35th Digital Avionics Systems Conference (DASC)*'
+doi: 10.1109/DASC.2016.7778089
 ---
