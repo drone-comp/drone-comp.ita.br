@@ -5,3 +5,6 @@
 /resources/
 public/
 assets/jsconfig.json
+
+# Python
+env/
