@@ -40,4 +40,6 @@ publication_types:
 abstract: ''
 publication: '*IEEE Access*'
 doi: 10.1109/ACCESS.2020.3030612
+url_video: 'https://ieeexplore.ieee.org/ielx7/6287639/8948470/9222133/graphical_abstract/access-gavideo-3030612.mp4'
+url_dataset: 'https://ieeexplore.ieee.org/ielx7/6287639/8948470/9222133/access-3030612-mm.zip?arnumber=9222133'
 ---
