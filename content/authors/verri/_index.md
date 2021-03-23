@@ -45,6 +45,12 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/verri
+- icon: lattes
+  icon_pack: ai
+  link: http://lattes.cnpq.br/0145582312635382
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0002-8240-5129
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
