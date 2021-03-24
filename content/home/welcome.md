@@ -24,6 +24,9 @@ cta:
   label: Join our mailing list
   icon_pack: fas
   icon: envelope
+cta_alt:
+  url: 'https://discord.gg/eqAmvXUEA5'
+  label: or our discord channel
 ---
 
 Our research group designs and develops computer systems and computational
