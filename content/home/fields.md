@@ -12,7 +12,7 @@ title: Research fields
 feature:
   - icon: landmark
     icon_pack: fas
-    name: Computational Finances
+    name: Computational Enonomics
     description: 'Tradable Mobility Permit Market<br/>Agent Based Market Simulation'
   - icon: microchip
     icon_pack: fas
