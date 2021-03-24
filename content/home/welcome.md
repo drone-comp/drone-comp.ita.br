@@ -15,18 +15,16 @@ design:
 advanced:
   css_style:
   css_class:
+
+# Call to action links (optional).
+#   Display link(s) by specifying a URL and label below. Icon is optional for `cta`.
+#   Remove a link/note by deleting a cta/note block.
+cta:
+  url: 'https://groups.google.com/g/drone-comp'
+  label: Join our mailing list
+  icon_pack: fas
+  icon: envelope
 ---
 
-The *DroneComp Research Group* designs and develops conducts research
-considering the design methodologies, development and implementation of the
-following topics.
-
-- ...
-
-## Mailing list
-
-TODO
-
-## Support
-
-<img src="/media/intel.png" width="100px"/>
+Our research group designs and develops computer systems and computational
+methods for the next-generation air transportation system.
