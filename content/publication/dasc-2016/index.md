@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: A runtime reconfiguration design targeting avionics systems
+title: A Runtime Reconfiguration Design Targeting Avionics Systems
 subtitle: ''
 summary: ''
 authors:
