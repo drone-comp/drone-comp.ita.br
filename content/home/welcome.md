@@ -5,7 +5,7 @@
 
 widget: hero  # See https://wowchemy.com/docs/page-builder/
 headless: true  # This file represents a page section.
-weight: 10  # Order that this section will appear.
+weight: 1  # Order that this section will appear.
 title: "DroneComp Research Group"
 subtitle: ""
 hero_media: logo.png
