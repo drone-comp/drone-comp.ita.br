@@ -11,12 +11,6 @@ subtitle: Our research is supported by
 design:
   spacing:
     padding: ["20px", "0", "0", "0"]
-
-gallery_item:
-  - album: gallery
-    image: intel.png
-    caption: Intel® AI
-    href: "https://www.intel.com"
 ---
 
-{{< gallery >}}
+{{< figure src="/media/sponsors.png" >}}
