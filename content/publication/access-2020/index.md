@@ -12,7 +12,7 @@ authors:
 - J. C. Marques
 - L. A. P. Júnior
 - M. R. Omena De Albuquerque Maximo
-- V. V. Curtis
+- curtis
 tags: []
 categories: []
 date: '2020-01-01'
