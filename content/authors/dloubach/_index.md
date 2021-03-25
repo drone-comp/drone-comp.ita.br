@@ -10,7 +10,7 @@ role: Assistant Professor
 
 # Organizations/Affiliations
 organizations:
-- name: Aeronautics Institute of Technology - ITA
+- name: Aeronautics Institute of Technology
   url: "http://www.ita.br"
 
 # Short bio (displayed in user profile at end of posts)
@@ -26,7 +26,7 @@ interests:
 education:
   courses:
   - course: PhD in Electronic Engineering and Computer Science
-    institution: Aeronautics Institute of Technology
+    institution: Aeronautics Institute of Technology - ITA
     year: 2012
 
 # Social/Academic Networking
