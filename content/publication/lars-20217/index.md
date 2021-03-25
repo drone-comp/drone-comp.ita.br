@@ -7,7 +7,7 @@ subtitle: ''
 summary: ''
 authors:
 - F. P. L. Franco
-- D. S. Loubach
+- dloubach
 - A. R. Fioravanti
 tags: []
 categories: []

@@ -7,7 +7,7 @@ summary: ''
 authors:
 - verri
 - C. A. C. Marcondes
-- D. S. Loubach
+- dloubach
 - E. F. Sbruzzi
 - J. C. Marques
 - L. A. P. Júnior
