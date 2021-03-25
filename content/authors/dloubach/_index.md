@@ -14,8 +14,7 @@ organizations:
   url: "http://www.ita.br/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include reconfigurable computing and embedded systems
-design.
+bio: My research interests include reconfigurable computing and embedded systems design.
 
 interests:
 - Reconfigurable computing
