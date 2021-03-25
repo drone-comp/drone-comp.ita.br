@@ -6,7 +6,7 @@ title: Considerations on Domain-Specific Architectures Applicability in Future A
 subtitle: ''
 summary: ''
 authors:
-- Denis S. Loubach
+- dloubach
 - Johnny Cardoso Marques
 - Adilson Marques da Cunha
 tags: []

@@ -6,7 +6,7 @@ subtitle: ''
 summary: ''
 authors:
 - D. B. Ramos
-- D. S. Loubach
+- dloubach
 - A. M. da Cunha
 tags: []
 categories: []

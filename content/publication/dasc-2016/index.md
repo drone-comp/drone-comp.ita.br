@@ -5,7 +5,7 @@ title: A Runtime Reconfiguration Design Targeting Avionics Systems
 subtitle: ''
 summary: ''
 authors:
-- D. S. Loubach
+- dloubach
 tags: []
 categories: []
 date: '2016-01-01'
