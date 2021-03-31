@@ -1,5 +1,6 @@
 ---
 title: Latest News
+draft: true
 
 # View.
 #   1 = List
