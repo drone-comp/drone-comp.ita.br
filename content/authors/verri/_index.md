@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Filipe Verri
+title: Filipe A. N. Verri
 
 # Is this the primary user of the site?
 superuser: false
