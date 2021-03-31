@@ -6,7 +6,7 @@ subtitle: ''
 summary: ''
 authors:
 - verri
-- C. A. C. Marcondes
+- cmarcond
 - dloubach
 - E. F. Sbruzzi
 - J. C. Marques
