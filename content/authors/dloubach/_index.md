@@ -6,7 +6,7 @@ title: Denis S. Loubach
 superuser: false
 
 # Role/position
-role: Assistant Professor
+role: Researcher
 
 # Organizations/Affiliations
 organizations:

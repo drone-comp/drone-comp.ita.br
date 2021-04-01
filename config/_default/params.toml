@@ -26,7 +26,7 @@ font = "native"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "L"
+font_size = "M"
 
 ############################
 ## Basic Info
@@ -89,7 +89,7 @@ phone = "+55 (12) 3947-6869" # TODO: anyone else volunteer?
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = { street = "Praça Marechal Eduardo Gomes, 50", city = "São José dos Campos", region = "SP", postcode = "12228-900", country = "Brazil", country_code = "BR"}
+# address = { street = "Praça Marechal Eduardo Gomes, 50", city = "São José dos Campos", region = "SP", postcode = "12228-900", country = "Brazil", country_code = "BR"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
@@ -100,7 +100,7 @@ coordinates = {latitude = "-23.209100041254032", longitude = "-45.87387862051925
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["7:30 to 17:00 UTC-3 Monday to Thursday"]
+# office_hours = ["7:30 to 17:00 UTC-3 Monday to Thursday"]
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
 # appointment_url = "https://calendly.com"
@@ -182,9 +182,9 @@ plugins_js  = []
   #   2: Compact
   #   3: Card
   #   4: Citation (publications only)
-  post_view = 2
-  publication_view = 2
-  talk_view = 2
+  post_view = 3
+  publication_view = 4
+  talk_view = 3
 
 ############################
 ## Comments

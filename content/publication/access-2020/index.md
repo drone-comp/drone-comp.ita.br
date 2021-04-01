@@ -6,6 +6,7 @@ subtitle: ''
 summary: ''
 authors:
 - verri
+<<<<<<< HEAD
 - C. A. C. Marcondes
 - dloubach
 - E. F. Sbruzzi
@@ -13,6 +14,15 @@ authors:
 - L. A. P. Júnior
 - M. R. Omena De Albuquerque Maximo
 - V. V. Curtis
+=======
+- cmarcond
+- dloubach
+- elton
+- johnny
+- ljr
+- mmaximo
+- curtis
+>>>>>>> main
 tags: []
 categories: []
 date: '2020-01-01'
@@ -33,7 +43,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: [ lmdd ]
 publishDate: '2021-03-22T13:36:00.303972Z'
 publication_types:
 - '2'
