@@ -14,4 +14,4 @@ design:
 ---
 
 If you want to know more about our research group, please contact [Prof. Filipe
-Verri](/author/filipe-verri).
+Verri](/author/filipe-a.-n.-verri/).
