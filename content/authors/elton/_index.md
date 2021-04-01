@@ -14,19 +14,19 @@ organizations:
   url: "http://www.ita.br/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include artificial intelligence, data science, computational finances.
+bio: My research interests include artificial intelligence, data science, computational finance.
 
 interests:
 - Artificial Intelligence
 - Data Science
-- Computational Finances
+- Computational Finance
 
 # TODO
-# education:
-#   courses:
-#   - course: PhD in Computer Science
-#     institution: University of São Paulo
-#     year: 2018
+ education:
+   courses:
+   - course: PhD in Computational Finance
+     institution: University of Essex
+     year: 2013
 #   - course: BSc in Computer Science
 #     institution: University of São Paulo
 #     year: 2014
@@ -42,18 +42,18 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:elton@ita.br'
-# - icon: google-scholar
-#   icon_pack: ai
-#   link: https://scholar.google.com/citations?user=36FsgZ0AAAAJ
+ - icon: google-scholar
+   icon_pack: ai
+   link: https://scholar.google.com/citations?user=10uds74AAAAJ&hl=nl
 # - icon: github
 #   icon_pack: fab
 #   link: https://github.com/verri
-# - icon: lattes
-#   icon_pack: ai
-#   link: http://lattes.cnpq.br/0145582312635382
-# - icon: orcid
-#   icon_pack: ai
-#   link: https://orcid.org/0000-0002-8240-5129
+ - icon: lattes
+   icon_pack: ai
+   link: http://lattes.cnpq.br/0026358605322965
+ - icon: orcid
+   icon_pack: ai
+   link: https://orcid.org/0000-0003-0457-0310
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -71,5 +71,4 @@ Elton F. Sbruzzi received the Ph.D. degree in computational finance from the
 University of Essex, Colchester, U.K. He is currently an Assistant Professor
 with the Instituto Tecnológico de Aeronáutica, São José dos Campos, Brazil,
 since 2018. His research interests include the application of artificial
-intelligence and data science in business, finance, and economics with focus in
-aerospace area.
+intelligence and data science in business, finance, and economics.
