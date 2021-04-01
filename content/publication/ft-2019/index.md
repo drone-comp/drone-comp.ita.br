@@ -7,8 +7,8 @@ subtitle: ''
 summary: ''
 authors:
 - dloubach
-- Johnny Cardoso Marques
-- Adilson Marques da Cunha
+- johnny
+- A. M. da Cunha
 tags: []
 categories: []
 date: '2019-01-01'

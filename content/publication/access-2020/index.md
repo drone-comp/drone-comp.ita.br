@@ -9,8 +9,8 @@ authors:
 - cmarcond
 - dloubach
 - E. F. Sbruzzi
-- J. C. Marques
-- L. A. P. Júnior
+- johnny
+- ljr
 - M. R. Omena De Albuquerque Maximo
 - curtis
 tags: []
