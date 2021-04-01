@@ -6,7 +6,7 @@ title: Lourenço Alves Pereira Júnior
 superuser: false
 
 # Role/position
-role: Professor
+role: Researcher
 
 # Organizations/Affiliations
 organizations:
@@ -70,12 +70,12 @@ user_groups:
 - Researchers
 ---
 
-Lourenço A Pereira received his BSc degree in Computer Science (2006, highest 
-ranked student of the class) by University of Alfenas (UNIFENAS) and holds 
-MSc and PhD in Computer Science and Computational Mathematics (2010 and 2016) 
-by the University of Sao Paulo (USP).  He is Assistant Professor in the 
-Department of Computer Systems at the Brazilian Aeronautics Institute of 
-Technology --- ITA.  He is member of the Laboratory of Command and Control and 
-Cyber Security.  His main research interests includes Computer Networks and 
+Lourenço A Pereira received his BSc degree in Computer Science (2006, highest
+ranked student of the class) by University of Alfenas (UNIFENAS) and holds
+MSc and PhD in Computer Science and Computational Mathematics (2010 and 2016)
+by the University of Sao Paulo (USP).  He is Assistant Professor in the
+Department of Computer Systems at the Brazilian Aeronautics Institute of
+Technology --- ITA.  He is member of the Laboratory of Command and Control and
+Cyber Security.  His main research interests includes Computer Networks and
 Cyber Security.
 

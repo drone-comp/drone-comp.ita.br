@@ -6,7 +6,7 @@ title: Cesar A. C. Marcondes
 superuser: false
 
 # Role/position
-role: Assistant Professor
+role: Researcher
 
 # Organizations/Affiliations
 organizations:

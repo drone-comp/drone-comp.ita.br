@@ -6,7 +6,7 @@ title: Vitor V. Curtis
 superuser: false
 
 # Role/position
-role: Professor
+role: Researcher
 
 # Organizations/Affiliations
 organizations:
