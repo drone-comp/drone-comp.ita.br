@@ -20,7 +20,6 @@ interests:
 - Reconfigurable computing
 - Embedded systems
 - Real-time systems
-- Real-time operating systems
 - Formal model-based design
 
 education:
