@@ -69,13 +69,5 @@ highlight_name: true
 user_groups:
 - Researchers
 ---
-
-Lourenço A Pereira received his BSc degree in Computer Science (2006, highest 
-ranked student of the class) by University of Alfenas (UNIFENAS) and holds 
-MSc and PhD in Computer Science and Computational Mathematics (2010 and 2016) 
-by the University of Sao Paulo (USP).  He is Assistant Professor in the 
-Department of Computer Systems at the Brazilian Aeronautics Institute of 
-Technology --- ITA.  He is member of the Laboratory of Command and Control and 
-Cyber Security.  His main research interests includes Computer Networks and 
-Cyber Security.
+Johnny Marques is a professor in the Computer Science Division of Aeronautics Institute of Technology in Brazil, researching in the areas of Software Quality, Critical Systems and Requirements Engineering. He holds a degree in Computer Engineering from the Rio de Janeiro State University (UERJ), a master's degree in Aeronautical Engineering and a doctorate in Electronic Engineering and Computing, these two lasts from the Aeronautics Institute of Technology in Brazil. He has over 20 years of experience in the aviation industry. He has been participating in the working group that defined standards for aviation software and databases. Currently, he contributes as an author of several IEEE Standards for Software Engineering, acting as part of Working Group C/S2ESC. Additionally, he has many international publications in Software Development for Safety Critical Environment and acts as reviewer for several international journals and conferences.
 
