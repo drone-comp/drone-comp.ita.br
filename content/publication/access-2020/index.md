@@ -6,15 +6,6 @@ subtitle: ''
 summary: ''
 authors:
 - verri
-<<<<<<< HEAD
-- C. A. C. Marcondes
-- dloubach
-- E. F. Sbruzzi
-- J. C. Marques
-- L. A. P. Júnior
-- M. R. Omena De Albuquerque Maximo
-- V. V. Curtis
-=======
 - cmarcond
 - dloubach
 - elton
@@ -22,7 +13,6 @@ authors:
 - ljr
 - mmaximo
 - curtis
->>>>>>> main
 tags: []
 categories: []
 date: '2020-01-01'
