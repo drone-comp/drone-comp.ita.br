@@ -8,10 +8,10 @@ authors:
 - verri
 - cmarcond
 - dloubach
-- E. F. Sbruzzi
+- elton
 - johnny
 - ljr
-- M. R. Omena De Albuquerque Maximo
+- mmaximo
 - curtis
 tags: []
 categories: []
