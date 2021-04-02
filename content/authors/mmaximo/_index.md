@@ -14,21 +14,25 @@ organizations:
   url: "http://www.ita.br/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include mobile robotics, autonomous systems, artificial intelligence.
+bio: My research interests include mobile robotics, autonomous sytems, artificial intelligence, and control systems.
 
 interests:
 - Mobile Robotics
 - Autonomous Systems
 - Artificial Intelligence
+- Control Systems
 
-# education:
-#   courses:
-#   - course: PhD in Computer Science
-#     institution: University of São Paulo
-#     year: 2018
-#   - course: BSc in Computer Science
-#     institution: University of São Paulo
-#     year: 2014
+ education:
+   courses:
+   - course: PhD in Electronic Engineering and Computer Science
+     institution: Aeronautics Institute of Technology
+     year: 2017
+   - course: MSc in Electronic Engineering and Computer Science
+     institution: Aeronautics Institute of Technology
+     year: 2015
+   - course: BSc in Computer Engineering
+     institution: Aeronautics Institute of Technology
+     year: 2012
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -41,18 +45,18 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:mmaximo@ita.br'
-# - icon: google-scholar
-#   icon_pack: ai
-#   link: https://scholar.google.com/citations?user=36FsgZ0AAAAJ
+ - icon: google-scholar
+   icon_pack: ai
+   link: https://scholar.google.com/citations?user=nMn5OfAAAAAJ&hl=en
 # - icon: github
 #   icon_pack: fab
 #   link: https://github.com/verri
-# - icon: lattes
-#   icon_pack: ai
-#   link: http://lattes.cnpq.br/0145582312635382
-# - icon: orcid
-#   icon_pack: ai
-#   link: https://orcid.org/0000-0002-8240-5129
+ - icon: lattes
+   icon_pack: ai
+   link: http://lattes.cnpq.br/1610878342077626
+ - icon: orcid
+   icon_pack: ai
+   link: https://orcid.org/0000-0003-2944-4476
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
