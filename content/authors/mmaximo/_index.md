@@ -14,7 +14,7 @@ organizations:
   url: "http://www.ita.br/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include mobile robotics, autonomous sytems, artificial intelligence, and control systems.
+bio: My research interests include mobile robotics, autonomous systems, artificial intelligence, and control systems.
 
 interests:
 - Mobile Robotics
