@@ -29,5 +29,6 @@ cta_alt:
   label: or our discord channel
 ---
 
-Our research group designs and develops computer systems and computational
-methods for the next-generation air transportation system.
+Our research group conducts high-level research on the design and development
+of computer systems and computational methods for the next-generation air
+transportation system.
