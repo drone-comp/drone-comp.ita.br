@@ -32,3 +32,7 @@ cta_alt:
 Our research group conducts high-level research on the design and development
 of computer systems and computational methods for the next-generation air
 transportation system.
+
+[{{< icon name="linkedin" pack="fab" >}}](https://www.linkedin.com/company/76928182/)
+[{{< icon name="facebook" pack="fab" >}}](https://www.facebook.com/drone.comp.7)
+[{{< icon name="youtube" pack="fab" >}}](https://www.youtube.com/channel/UC6g9n3EuVUNb19h8Oh9LynA)
