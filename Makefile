@@ -1,4 +1,4 @@
 all:
 	rm -rf public
-	hugo -D
+	hugo --gc --minify
 	rsync -avzhe 'ssh -p 2222' public/ wmdronecomp@dominios02.ita.br:html
