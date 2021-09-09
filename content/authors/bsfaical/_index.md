@@ -27,9 +27,9 @@ education:
     year: 2008
 
 social:
-# - icon: envelope
-#   icon_pack: fas
-#   link: 'mailto:@ita.br'
+- icon: envelope
+  icon_pack: fas
+  link: 'mailto:bsfaical@ita.br'
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com.br/citations?user=CxrnJpQAAAAJ&hl=pt-BR
