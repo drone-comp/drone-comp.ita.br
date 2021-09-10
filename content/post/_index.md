@@ -1,6 +1,5 @@
 ---
-title: Latest News
-draft: true
+title: News
 
 # View.
 #   1 = List
