@@ -1,5 +1,5 @@
 ---
-title: Research group is registered in the National Research Infrastructure Platform
+title: Research group accredited by the National Research Infrastructure Platform
 date: 2021-09-16T11:12:48-03:00
 ---
 
