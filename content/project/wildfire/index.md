@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Multisensor Wildfire Prediction"
+title: "Multi-Sensor Wildfire Prediction"
 summary: ""
 authors: [verri, johnny]
 tags: []
@@ -38,7 +38,7 @@ slides: ""
 ---
 
 We aim at creating a data collection system capable of dealing with
-multiplatform and multisensor (multispectral imaging, humidity, temperature,
+multiplatform and multi-sensor (multispectral imaging, humidity, temperature,
 and others) data to build artificial intelligence models to predict wildfire
 risk in a coverage area.
 
