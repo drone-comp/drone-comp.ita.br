@@ -4,11 +4,11 @@ headless: true  # This file represents a page section.
 active: true  # Activate this widget? true/false
 weight: 40
 
-title: Sponsors
-subtitle: Our research is supported by
+title: Institutions
+subtitle: PPG-PO is a joint program by
 
 content:
-  page_type: sponsor
+  page_type: institution
 
 design:
   columns: 2
