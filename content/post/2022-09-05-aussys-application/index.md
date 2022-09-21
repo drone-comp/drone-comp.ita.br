@@ -1,5 +1,5 @@
 ---
-title: "Chamada para bolsas de pesquisa e desenvolvimento (AuSSys)"
+title: "[BR] Chamada para bolsas de pesquisa e desenvolvimento (AuSSys)"
 projects: [ aussys ]
 date: 2022-09-05
 ---

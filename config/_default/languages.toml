@@ -12,7 +12,7 @@
   title = "Programa de Pós-Graduação em Pesquisa Operacional"
   [[pt.menu.main]]
     name = "Notícias"
-    url = "noticia"
+    url = "/post"
     weight = 20
 
 
