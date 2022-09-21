@@ -10,16 +10,16 @@ title: Research fields
 # Add/remove as many `feature` blocks below as you like.
 # For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-  - icon: landmark
+  - icon: atom
     icon_pack: fas
     name: Data Science
     #description: 'Tradable Mobility Permit Market<br/>Agent Based Market Simulation'
-  - icon: microchip
+  - icon: calculator
     icon_pack: fas
-    name: Optimization Methods
-  - icon: database
+    name: Optimization
+  - icon: book
     icon_pack: fas
-    name: Managment and Decision Support
+    name: Decision Support System
 ---
 
-Our main research fields:
+Our main research fields are

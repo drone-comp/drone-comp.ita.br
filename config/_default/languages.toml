@@ -7,13 +7,13 @@
   languageCode = "en-us"
   # contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
 
-[pt]
-  languageCode = "pt-br"
-  title = "Programa de Pós-Graduação em Pesquisa Operacional"
-  [[pt.menu.main]]
-    name = "Notícias"
-    url = "/post"
-    weight = 20
+# [pt]
+#   languageCode = "pt-br"
+#   title = "Programa de Pós-Graduação em Pesquisa Operacional"
+#   [[pt.menu.main]]
+#     name = "Notícias"
+#     url = "/post"
+#     weight = 20
 
 
 # Uncomment the lines below to configure your website in a second language.
