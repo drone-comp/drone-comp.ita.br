@@ -1,5 +1,5 @@
 ---
-title: "[BR] Chamada para bolsas de pesquisa e desenvolvimento (AuSSys)"
+title: "Chamada para bolsas de pesquisa e desenvolvimento (AuSSys)"
 projects: [ aussys ]
 date: 2022-09-05
 ---
@@ -9,8 +9,8 @@ seletivo para concessão de até 3 (três) bolsas de pesquisa e desenvolvimento
 tecnológico, para a realização de atividades de pesquisa e desenvolvimento para
 reconhecimento de objetos na superfície marítima utilizando Inteligência
 Artificial (IA) no âmbito do Projeto de Desenvolvimento de Ciência e Tecnologia
-“Tripulante Virtual - Autonomous Search System”, coordenado pelo Prof. Dr.
-Filipe A. N. Verri da Divisão de Ciência da Computação do Instituto Tecnológico
+“Tripulante Virtual - Autonomous Search System”, coordenado pelo [Prof. Filipe
+Verri](/author/filipe-a.-n.-verri/) da Divisão de Ciência da Computação do Instituto Tecnológico
 de Aeronáutica (ITA), co-executado em projeto da [Fundação
 CERTI](https://certi.org.br/).
 
