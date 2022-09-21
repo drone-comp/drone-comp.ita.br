@@ -26,7 +26,7 @@ font = "native"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "M"
+font_size = "S"
 
 ############################
 ## Basic Info
@@ -84,7 +84,7 @@ show_related = {post = true, project = true, publication = true, talk = true}
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "verri@ita.br" # TODO: lab alias or Google Groups?
+email = "ppgpo@unifesp.br" # TODO: lab alias or Google Groups?
 phone = "+55 (12) 3947-6869" # TODO: anyone else volunteer?
 
 # Address
