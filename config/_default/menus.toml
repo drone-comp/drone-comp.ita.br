@@ -3,35 +3,54 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-#[[main]]
-#  name = "Home"
-#  url = "/"
-#  weight = 10
+[[main]]
+  #name = "Home"
+  url = "/"
+  weight = 10
+  pre = "<i class='fa fa-home'></i>"
 
 [[main]]
-  name = "News"
-  url = "post"
+  name = "Admission"
+  url = "admission"
   weight = 20
 
 [[main]]
+  name = "Research"
+  url = "research"
+  weight = 30
+  identifier = "research"
+[[main]]
   name = "Projects"
   url = "project"
-  weight = 25
+  weight = 31
+  parent = "research"
+[[main]]
+  name = "Publications"
+  url = "publication"
+  weight = 32
+  parent = "research"
 
 [[main]]
   name = "People"
   url = "people"
-  weight = 30
-
-# [[main]]
-#   name = "Events"
-#   url = "event"
-#   weight = 40
+  weight = 40
+  identifier = "people" #TODO: mover texto para uma página
+[[main]]
+  name = "Alumni"
+  url = "alumni"
+  weight = 41
+  parent = "people"
 
 [[main]]
-  name = "Publications"
-  url = "publication"
+  name = "About"
+  url = "about"
   weight = 50
+  identifier = "about" #TODO: mover texto para uma página
+[[main]]
+  name = "News"
+  url = "post"
+  weight = 51
+  parent = "about"
 
 [[main]]
   name = "Contact"

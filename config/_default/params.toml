@@ -26,7 +26,7 @@ font = "native"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "S"
+font_size = "M"
 
 ############################
 ## Basic Info
@@ -85,7 +85,7 @@ show_related = {post = true, project = true, publication = true, talk = true}
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "ppgpo@unifesp.br" # TODO: lab alias or Google Groups?
-phone = "+55 (12) 3947-6869" # TODO: anyone else volunteer?
+#phone = "+55 (12) 3947-6869" # TODO: anyone else volunteer?
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
@@ -93,7 +93,7 @@ phone = "+55 (12) 3947-6869" # TODO: anyone else volunteer?
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "-23.209100041254032", longitude = "-45.87387862051925"}
+#coordinates = {latitude = "-23.209100041254032", longitude = "-45.87387862051925"}
 
 # Directions for visitors to locate you.
 # directions = "Enter Building 1 and take the stairs to Reception on Floor 2"
@@ -120,7 +120,7 @@ contact_links = [
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
-sharing_image = ""
+sharing_image = "static/media/logo.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
 twitter = ""

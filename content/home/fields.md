@@ -10,14 +10,14 @@ title: Research fields
 # Add/remove as many `feature` blocks below as you like.
 # For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-  - icon: atom
+  - icon: database #or atom
     icon_pack: fas
     name: Data Science
     #description: 'Tradable Mobility Permit Market<br/>Agent Based Market Simulation'
-  - icon: calculator
+  - icon: server
     icon_pack: fas
     name: Optimization
-  - icon: book
+  - icon: user-tie
     icon_pack: fas
     name: Decision Support System
 ---

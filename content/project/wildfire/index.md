@@ -3,7 +3,7 @@
 
 title: "Multi-Sensor Wildfire Prediction"
 summary: ""
-authors: [verri, johnny]
+authors: [verri]
 tags: []
 categories: []
 date: 2022-06-02

@@ -3,7 +3,7 @@
 
 title: "Autonomous Search System"
 summary: ""
-authors: [verri, johnny]
+authors: [verri]
 tags: []
 categories: []
 date: 2021-10-26T17:36:02-03:00
