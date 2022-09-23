@@ -1,37 +1,60 @@
-# Wowchemy's Research Group Template for [Hugo](https://github.com/gohugoio/hugo)
+# Site PPG-PO
 
-The **Research Group Template** empowers your research group to easily create a beautiful website with a stunning homepage, news, academic publications, events, team profiles, and a contact form.
+O site utiliza [Hugo](https://github.com/gohugoio/hugo), e o Academics template, para gerar as páginas estáticas. A [documentação](https://wowchemy.com/docs/) é bem rápida de ser lida.
 
-[Check out the latest demo](https://research-group.netlify.app/) of what you'll get in less than 5 minutes, or [view the showcase](https://wowchemy.com/user-stories/).
+As páginas são construídas através de Markdown. Veja aqui os [elementos](https://wowchemy.com/docs/content/writing-markdown-latex/) disponíveis para construir seu conteúdo.
 
-_[**Wowchemy**](https://wowchemy.com) makes it easy to create a beautiful website for free. Edit your site in Markdown, Jupyter, or RStudio (via Blogdown), generate it with Hugo, and deploy with GitHub or Netlify. Customize anything on your site with widgets, themes, and language packs._
+## Instalação do ambiente
 
-- 👉 [**Get Started**](https://wowchemy.com/templates/)
-- 📚 [View the **documentation**](https://wowchemy.com/docs/)
-- 💬 [Chat with the **Wowchemy community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=(%23MadeWithWowchemy%20OR%20%23MadeWithAcademic)&src=typed_query)
-- 💡 [Request a **feature** or report a **bug** for _Wowchemy_](https://github.com/wowchemy/wowchemy-hugo-modules/issues)
-- ⬆️ **Updating Wowchemy?** View the [Update Guide](https://wowchemy.com/docs/update/) and [Release Notes](https://wowchemy.com/updates/)
+É necessário instalar o Hugo versão Extended. A versão do Hugo, normal ou extended, depende de cada distribuição linux. No Ubuntu, os pacotes correspondem a versão normal.
 
-## Crowd-funded open-source software
+### Ubuntu
 
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
+Baixe o binário da última versão do hugo, que tenha o nome extended, no [site de releases](https://github.com/gohugoio/hugo/releases), e.g.: [https://github.com/gohugoio/hugo/releases/download/v0.103.1/hugo_extended_0.103.1_linux-amd64.deb](https://github.com/gohugoio/hugo/releases/download/v0.103.1/hugo_extended_0.103.1_linux-amd64.deb)
 
-### [❤️ Click here to unlock rewards with sponsorship](https://wowchemy.com/plans/)
+Instale o pacote python normalmente com o apt: `sudo apt install ./hugo_extended_0.103.1_linux-amd64.deb `
 
-## Ecosystem
+**Importante**: você irá esquecer disto e irá aparecer vários erros. 😅 Você deve manter a versão do Hugo atualizada. Para isto, repita o processo anterior, porém com a versão mais nova.
 
-* **[Hugo Academic CLI](https://github.com/wowchemy/hugo-academic-cli/):** Automatically import publications from BibTeX
+## Github
 
-[![Screenshot](./preview.png)](https://wowchemy.com/templates/)
+Sempre que desejar submeter uma alteração, crie um branch, faça suas alterações e depois crie um pull request.
 
-## Demo Credits
+Considerando estar na raiz do projeto
 
-Please replace the demo images with your own.
+```bash
+# 1 - cria um branch com nome 'minha_alteracao' e faz checkout neste branch (salta para ele)
+git checkout -b minha_alteracao
 
-- [Female scientist](https://unsplash.com/photos/uVnRa6mOLOM)
-- [2 Coders](https://unsplash.com/photos/kwzWjTnDPLk)
-- [Cafe](https://unsplash.com/photos/RnDGGnMEOao)
+# 2 - faça as alterações desejadas
+# 3 - commit
+git commit -m "descrição curta das minhas alterações"
 
+# 4 - outras alterações
+# 5 - commit
+git commit -m "descrição curta de outras alterações"
 
-[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/starter-research-group/readme?pixel)](https://github.com/igrigorik/ga-beacon)
+# 6 - submeter ao servidor
+git push
+
+# 7 - entre no site para fazer o pull request
+
+# 8 - se quiser voltar à raiz (master) da árvore de branches
+git branch master
+```
+
+Referências para aprender git:
+- [Fast tutorial](https://rogerdudler.github.io/git-guide/index.pt_BR.html)
+- [1 hour video](https://www.youtube.com/watch?v=8JJ101D3knE)
+
+## Testar a página
+
+Para inicializar o servidor: `hugo server --disableFastRender`.
+
+Nota: Se você utilizar WSL, lembre que ele só permite o uso de portas acima de 8080(se não me engano). Nesta caso especifique uma porta alta: `hugo server -p 8888 --disableFastRender`.
+
+## Mais
+
+Para atualização, veja [Update Guide](https://wowchemy.com/docs/update/) and [Release Notes](https://wowchemy.com/updates/).
+
+Ferramenta para importar BibTeX [Hugo Academic CLI](https://github.com/wowchemy/hugo-academic-cli/)
