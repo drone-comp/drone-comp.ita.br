@@ -45,19 +45,24 @@
   parent = "people"
 
 [[main]]
-  name = "About"
-  weight = 50
-  identifier = "about" #TODO: mover texto para uma página
-[[main]]
   name = "Program"
-  url = "program"
+  weight = 50
+  identifier = "program" #TODO: mover texto para uma página
+[[main]]
+  name = "About"
+  url = "about"
   weight = 51
-  parent = "about"
+  parent = "program"
+[[main]]
+  name = "Coordination"
+  url = "coordination"
+  weight = 52
+  parent = "program"
 [[main]]
   name = "News"
   url = "post"
-  weight = 52
-  parent = "about"
+  weight = 53
+  parent = "program"
 
 [[main]]
   name = "Contact"

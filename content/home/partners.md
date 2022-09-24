@@ -5,7 +5,7 @@ active: true  # Activate this widget? true/false
 weight: 50
 
 title: Partners
-subtitle: Meet our Research Partners
+subtitle: Meet our research partners
 
 content:
   page_type: partner
