@@ -38,7 +38,7 @@ education:
 social:
 - icon: cv
   icon_pack: ai
-  link: 'http://www.comp.ita.br/~verri/'
+  link: 'https://comp.ita.br/~verri/'
 - icon: envelope
   icon_pack: fas
   link: 'mailto:verri@ita.br'

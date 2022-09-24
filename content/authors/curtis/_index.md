@@ -19,7 +19,7 @@ bio: My research interests include high performance computing, algorithms, and o
 interests:
 - High Performance Computing
 - Algorithms
-- Optimization
+- Data Science
 
 education:
   courses:
@@ -37,7 +37,7 @@ education:
 social:
 - icon: cv
   icon_pack: ai
-  link: 'http://www.comp.ita.br/~curtis/'
+  link: 'https://comp.ita.br/~curtis/'
 - icon: envelope
   icon_pack: fas
   link: 'mailto:curtis@ita.br'
