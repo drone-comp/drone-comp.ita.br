@@ -1,5 +1,5 @@
 ---
-widget: contact
+widget: blank
 headless: true
 weight: 10
 
@@ -13,28 +13,30 @@ design:
   columns: '1'
 ---
 
-For more information, please, contact our secretaries at UNIFESP or ITA.
+For general information about the program or suggestion about our website, please contact [ppgpo@unifesp.br](ppgpo@unifesp.br).
+
+For other information, please, directly contact our secretaries at UNIFESP or ITA.
 
 ## ITA
 
-Segunda a Quinta-feira
+Office hours
 
-Manhã: 8:30 - 11:30
-Tarde: 13:30 - 17:00
-Sexta-feira
+- Monday to Thursday: 8h30-11h30, 13h30-17h00
+- Friday: 8h30-11h30
 
-Manhã: 8:30 - 11:30
-A seguir, apresento as secretarias, que são divididas por assunto:
+### For *special regime students* and *single course*
 
-Aluno Especial e Disciplina Isolada: dúvidas, inscrições.
-Telefone: (12) 3305-8542, Sala F1-102, Contato: Luciana
+Please contact [Luciana](lucianalgs@ita.br): Tel. +55 12 3305-8542 or Room F1-102
 
-Aluno Regular - Doutorado e Mestrado: cursos de mestrado e doutorado.
+### For *regular students*
 
-Atendimento: Dúvidas sobre os cursos, crachá, requerimentos, contagem de créditos, dissertação e tese.​
-Telefone: (12) 3305-8547,Sala F-102, Contato: Elenice
+- **Attendance:**
+for questions about courses, badges, requirements, counting credits, dissertation and thesis, please contact [Elenice](elenice@ita.br): Tel. +55 12 3305-8547, Room F-102
 
-Registro: Histórico escolar, diploma, matrícula, formatura
-Telefone: (12) 3305-8545, Sala F1-102, Contato: Sheila
+- **Register**: for academic transcripts, diploma, enrollment, graduation, please contact [Sheila](sheila@ita.br): +55 12 3305-8545, Room F1-102
+
+- **PROAP/PROEX office**: support for participation in events and conferences, please contact [Marco Aurelio](aurelio@ita.br): +55 12 3305-8542, Room F1-102
 
 ## UNIFESP
+
+Tel. +55 11 3385-4100 or email (pos.sjc@unifesp.br)[pos.sjc@unifesp.br]

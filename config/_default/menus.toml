@@ -16,7 +16,6 @@
 
 [[main]]
   name = "Research"
-  url = "research"
   weight = 30
   identifier = "research"
 [[main]]
@@ -32,24 +31,32 @@
 
 [[main]]
   name = "People"
-  url = "people"
   weight = 40
   identifier = "people" #TODO: mover texto para uma página
 [[main]]
+  name = "Faculty"
+  url = "faculty"
+  weight = 41
+  parent = "people"
+[[main]]
   name = "Alumni"
   url = "alumni"
-  weight = 41
+  weight = 42
   parent = "people"
 
 [[main]]
   name = "About"
-  url = "about"
   weight = 50
   identifier = "about" #TODO: mover texto para uma página
 [[main]]
+  name = "Program"
+  url = "program"
+  weight = 51
+  parent = "about"
+[[main]]
   name = "News"
   url = "post"
-  weight = 51
+  weight = 52
   parent = "about"
 
 [[main]]
