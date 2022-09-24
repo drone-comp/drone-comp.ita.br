@@ -29,7 +29,7 @@ cta_alt:
   label: or Facebook
 ---
 
-The PPG-PO (acronym in portuguese) is a joint graduate program by ITA and UNIFESP, [Top-5 in Latin America](https://www.timeshighereducation.com/world-university-rankings/2022/lat%C3%ADn-america-university-rankings#!/page/0/length/10/sort_by/rank/sort_order/asc/cols/undefined) according to THE, offering groundbreaking master's and doctoral education in fields related to decision sciences.
+The PPG-PO (acronym in portuguese) is a joint graduate program by ITA and UNIFESP, [TOP-5 in Latin America](https://www.timeshighereducation.com/world-university-rankings/2022/lat%C3%ADn-america-university-rankings#!/page/0/length/10/sort_by/rank/sort_order/asc/cols/undefined) according to THE, offering groundbreaking master's and doctoral education in fields related to decision sciences.
 
 [{{< icon name="linkedin" pack="fab" >}}](https://www.linkedin.com/company/pesquisaoperacional/)
 [{{< icon name="facebook" pack="fab" >}}](https://www.facebook.com/ppgpo/)

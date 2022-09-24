@@ -4,6 +4,19 @@ O site utiliza [Hugo](https://github.com/gohugoio/hugo), e o Academics template,
 
 As páginas são construídas através de Markdown. Veja aqui os [elementos](https://wowchemy.com/docs/content/writing-markdown-latex/) disponíveis para construir seu conteúdo.
 
+## Estrutura organizacional
+
+O site está organizado seguindo o seguinte racional:
+- *Home* - página principal livre, com **linguagem simplificada** para o **público geral**, candidatos e alunos
+- *Admission* - deve conter todas as informações relativas ao processo de candidatura, i.e., **candidatos não alunos**, com as seguintes exceções:
+  1. cursos oferecidos, pois são relativos ao programa
+  2. linhas de pesquisa, pois são relativos à pesquisa
+- *Research* - deve conter todas as informações relativas à pesquisa: linhas de pesquisa, projetos, publicações, teses defendidas e a serem defendidas, calendário de palestras e apresentações antigas
+- *People* - deve apresentar as pessoas do programa, incluindo os alunos formados
+- *Program* - deve apresentar as instituições, o programa, suas normas e informações relativas à administração, como notícias administrativas (notícias).
+
+Caso existam muitas notícias administrativas, seria ideal acrescentar mais um campo geral *news* e subdividir as informações administrativas, das informações de pesquisa e para o público geral com tags.
+
 ## Instalação do ambiente
 
 É necessário instalar o Hugo versão Extended. A versão do Hugo, normal ou extended, depende de cada distribuição linux. No Ubuntu, os pacotes correspondem a versão normal.

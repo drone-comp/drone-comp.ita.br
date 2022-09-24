@@ -16,55 +16,74 @@
 
 [[main]]
   name = "Research"
-  weight = 30
+  weight = 40
   identifier = "research"
+[[main]]
+  name = "Research Fields" # apresentar os destaques
+  url = "fields"
+  weight = 41
+  parent = "research"
 [[main]]
   name = "Projects"
   url = "project"
-  weight = 31
+  weight = 42
   parent = "research"
 [[main]]
   name = "Publications"
   url = "publication"
-  weight = 32
+  weight = 43
+  parent = "research"
+[[main]]
+  name = "Thesis & Dissertations" # defendidas e talvez a divulgação de próximas defesas
+  url = "thesis"
+  weight = 44
   parent = "research"
 
 [[main]]
   name = "People"
-  weight = 40
+  weight = 60
   identifier = "people" #TODO: mover texto para uma página
 [[main]]
   name = "Faculty"
   url = "faculty"
-  weight = 41
+  weight = 61
   parent = "people"
 [[main]]
   name = "Alumni"
   url = "alumni"
-  weight = 42
+  weight = 62
   parent = "people"
 
 [[main]]
   name = "Program"
-  weight = 50
+  weight = 80
   identifier = "program" #TODO: mover texto para uma página
 [[main]]
   name = "About"
   url = "about"
-  weight = 51
+  weight = 81
   parent = "program"
 [[main]]
   name = "Coordination"
   url = "coordination"
-  weight = 52
+  weight = 82
+  parent = "program"
+[[main]]
+  name = "Courses"
+  weight = 83
+  parent = "program"
+[[main]]
+  name = "Rules"
+  url = "rules"
+  weight = 84
   parent = "program"
 [[main]]
   name = "News"
   url = "post"
-  weight = 53
+  weight = 85
   parent = "program"
 
 [[main]]
   name = "Contact"
   url = "contact"
-  weight = 60
+  weight = 100
