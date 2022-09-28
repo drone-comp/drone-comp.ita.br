@@ -29,6 +29,17 @@ Instale o pacote python normalmente com o apt: `sudo apt install ./hugo_extended
 
 **Importante**: você irá esquecer disto e irá aparecer vários erros. 😅 Você deve manter a versão do Hugo atualizada. Para isto, repita o processo anterior, porém com a versão mais nova.
 
+## Servir a página
+
+Par servir a página utilize o Hugo. Ele irá compilar e iniciar um servidor através do comando
+
+```bash
+# inicia o servidor na porta 8888
+hugo server -p 8888
+
+# irá aparecer um link, basta clicar nele
+```
+
 ## Github
 
 Sempre que desejar submeter uma alteração, crie um branch, faça suas alterações e depois crie um pull request.
