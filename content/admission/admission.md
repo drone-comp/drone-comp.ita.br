@@ -15,9 +15,9 @@ design:
 
 The selection process takes place twice a year based on the academic semester.
 
-* **• Period 1** -  usually in April, to start the course in the 2nd period of the same year;
+* **Period 1** -  usually in April, to start the course in the 2nd period of the same year;
 
-* **• Period 2** - usually in September, to start the course in the 1st period of the following year.
+* **Period 2** - usually in September, to start the course in the 1st period of the following year.
 
 The process is unique for master's degree, Ph.D., and PMG (Graduate Master's Program) courses.
 
@@ -94,7 +94,7 @@ Updated Lattes CV (link is external) with photo (required);
 
 The preliminary research proposal is a mandatory document for all applicants. It must contain the description of the area of interest, motivation, research objective, and work plan, following the specific model available below:
 
-• [Model of preliminary research proposal] ([colocar o link do template])
+*  [Model of preliminary research proposal] ([colocar o link do template])
 
 In cases where the candidate has already defined a advisor, it must be indicated in the proposal. The professor appointed must be accredited as a professor of the selected graduate program.
 
@@ -111,7 +111,7 @@ The Basic Math Test program covers the following topics:
 
 Logic; sets, relations and functions; arithmetic (including simple and compound rules of three); radicals, exponentials, logarithms and hyperbolic functions; analytical geometry (in two and three dimensions); plane geometry and spatial geometry; plane and spherical trigonometry; sequences and series (including A.P and G.P); probabilities and combinatorics (including Newton binomials); matrices and determinants; algebra (including systems of equations and polynomials); complex numbers; limits, derivatives and simple integrals. 
 
-**Candidates can find the memory of the selection process exams at the link:** (http://www.civil.ita.br/posgrad/ )
+**Candidates can find the memory of the selection process exams at the link:** http://www.civil.ita.br/posgrad/ 
 
 The test lasts for 1 hour and 30 minutes. During the test, the candidate must remain connected to a virtual room on the Google Meet platform, with an open camera and microphone, therefore, a stable internet connection is required. 
 
@@ -135,7 +135,7 @@ The documents sent in the admission process will be analyzed by the selection bo
 The selection of candidates is based on the analysis of the documentation presented by the candidate, on the candidate's performance in the tests described above and the interview.
 
 # 10. Disclosure of results
-The list of candidates registered and approved in the selection process will be published on the [UNIFESP website (link is external)].Enrollment dates are defined in the graduate calendar.
+The list of candidates registered and approved in the selection process will be published on the **UNIFESP website** (colocar o link).Enrollment dates are defined in the graduate calendar.
 
 # 11. Certificate of English Proficiency for Doctoral Candidates
 
