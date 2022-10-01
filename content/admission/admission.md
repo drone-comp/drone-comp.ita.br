@@ -31,29 +31,29 @@ The process is unique for master's degree, Ph.D., and PMG (Graduate Master's Pro
 
  
 
-Link para a página do Processo Seletivo :
+Link to the Selection Process page:
 
 * http://www.ita.br/posgrad/procseletivo
 
  
 
-Link para o edital:
+Link to the public notice:
 
 * https://drive.google.com/file/d/1mmfDJzjXBHoErHP570xRT9UaKR56cbEL/view?usp=sharing
 
  
 
-Link para o modelo de Projeto de Pesquisa a ser apresentado pelos candidatos:
+Link to the Research Project template to be submitted by candidates:
 
 * https://docs.google.com/document/d/1lYBqErg44eRkVGSPfXRN4WpnlqNT1SeO/edit?usp=sharing&ouid=109958192749779926336&rtpof=true&sd=true
 
-Conheça as áreas de atuação e projetos dos orientadores
+Discover the areas of activity and projects of the advisors
 
 * https://docs.google.com/spreadsheets/d/1q7MtOcjc2ePue8DXrhz5NnLmzP11JT-w/edit?usp=sharing&ouid=109958192749779926336&rtpof=true&sd=true
 
  
 
-Link da carta de autodeclaração
+Link to self-declaration letter
 
 * https://docs.google.com/document/d/1jX1Z12c4ZVgw7mqL1_dttSSouvgP8jgZ/edit?usp=sharing&ouid=109958192749779926336&rtpof=true&sd=true
  
@@ -64,46 +64,31 @@ Application for the selection process must be made through the **Electronic Regi
 ## 2.1 Important dates
 
 
-**09/01/2022 to 10/14/2022** 
-* Application period for the Selection Process (September 1 to October 14)
+* **09/01/2022 to 10/14/2022** - Application period for the Selection Process (September 1 to October 14)
 
-
-**11/21/2022**
-* Online exam (mathematics content) for all candidates and English exam
+* **11/21/2022** - Online exam (mathematics content) for all candidates and English exam
 for Master's students
 
-**11/22/2022 and 11/23/2022**
-
-*Phase I: Verification of candidates who obtained a grade greater than or equal to the average of the
+* **11/22/2022 and 11/23/2022** - Phase I: Verification of candidates who obtained a grade greater than or equal to the average of the
 grades of all candidates enrolled for the graduate program in
 Operations Research in the Mathematics test and Master's candidates who also got at least half of the English test correct
 
-**11/24/2022** 
-* Phase I Result
+* **11/24/2022** - Phase I Result
 
-**11/25/2022**
-* Period for submitting an appeal for Phase I
+* **11/25/2022** - Period for submitting an appeal for Phase I
 
-**11/26/2022 to 11/31/2022**
+* **11/26/2022 to 11/31/2022** - Phase II: Documentation analysis (school transcript, Curriculum vitae, Project and letter of presentation) for candidates selected in Phase I
 
-* Phase II: Documentation analysis (school transcript, Curriculum vitae, Project and letter of presentation) for candidates selected in Phase I
+* **Until 12/01/2022** - Phase II Result
 
-**Until 12/01/2022**
-* Phase II Result
+* **12/02/2022** - Period for filing Phase II appeal
 
-**12/02/2022**
-   Period for filing Phase II appeal
-
-**12/05/2022 to 12/09/2022**
-
-* Phase III: interview with emphasis on the research project for candidates
+* **12/05/2022 to 12/09/2022** - Phase III: interview with emphasis on the research project for candidates
 selected in Phase II
 
-**Until 12/15/2022**
-* Publication of the list of candidates accepted for the Master's, Doctorate and Special Student
+* **Until 12/15/2022** - Publication of the list of candidates accepted for the Master's, Doctorate and Special Student
   
-**12/16/2022** 
-* Period for filing Phase III appeal
+* **12/16/2022** - Period for filing Phase III appeal
 
 
 **Note 1** - For admission in the **1st period of 2023**, candidates must take a basic mathematics test that will be held on  **November 21, 2022 (Monday), at 9h00 am (Brasilia time)**. 
