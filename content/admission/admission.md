@@ -217,5 +217,5 @@ Doctoral candidates approved in the selection process with full-time dedication 
 For admission to the doctorate courses, the certificate is considered valid regardless of the date it was obtained (certificates obtained more than two years ago can also be used).
 
 # Questions and Information
-Questions must be sent via email to ippg.sec@ita.br or via ([WhatsApp to +55 (12) 99147-1625] (https://wa.me/5512991471625)).
+Questions must be sent via email to ippg.sec@ita.br or via [WhatsApp to +55 (12) 99147-1625] (https://wa.me/5512991471625).
 
