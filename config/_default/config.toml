@@ -89,9 +89,13 @@ disableAliases = true  # Disable aliases when `redirects` is added to the `outpu
 # Install Wowchemy
 [module]
   [[module.imports]]
-    path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms"
+    path = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms"
   [[module.imports]]
-    path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy"
+    path = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify"
+  [[module.imports]]
+    path = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal"
+  [[module.imports]]
+    path = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5"
 
 [security]
   enableInlineShortcodes = false
