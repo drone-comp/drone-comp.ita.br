@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Multi-Sensor Wildfire Prediction"
+title: "Wildfire Risk Prediction"
 summary: ""
-authors: [verri, johnny]
+authors: [verri, cmarcond, johnny, dloubach, curtis, leonardo]
 tags: []
 categories: []
 date: 2022-06-02
@@ -37,9 +37,42 @@ url_video: ""
 slides: ""
 ---
 
-We aim at creating a data collection system capable of dealing with
-multiplatform and multi-sensor (multispectral imaging, humidity, temperature,
-and others) data to build artificial intelligence models to predict wildfire
+Unmanned Aerial Vehicle (UAV) applications have witnessed significant
+advancements across diverse domains, including surveillance, agriculture,
+disaster management, and environmental monitoring. UAV sensors can gather
+critical data, enabling real-time decision-making and enhancing operational
+capabilities.
+
+However, integrating and managing multiple sensors within a UAV platform pose
+significant challenges for optimal performance and functionality. UAV platforms
+rely on different types of sensors. Each sensor serves a specific purpose, from
+capturing high-resolution imagery to detecting environmental variables and
+identifying objects of interest. Integrating these diverse sensors into
+a unified system requires addressing complex technical, logistical, and
+operational challenges to extract significant information can be a daunting
+task.
+
+Machine learning algorithms can fuse data from multiple sensors, enabling the
+extraction of meaningful information. Furthermore, machine learning techniques
+can learn the correlations and patterns across sensor data by training models
+on integrated datasets, allowing for more accurate and comprehensive analysis.
+As a result, we can enhance the overall data quality and facilitate better
+decision-making, enabling a holistic view of the wildfire situation.
+
+Monitoring the risk of wildfires allows for proactive measures to prevent and
+mitigate their occurrence. By identifying areas with high fire risk,
+authorities can implement preventive measures such as controlled burns, fuel
+management, and enforcing fire safety regulations. Monitoring also enables
+early detection of potential ignition sources, such as lightning strikes or
+human activities, allowing immediate response and mitigation efforts. By
+leveraging advanced monitoring technologies and data-driven approaches,
+authorities can enhance their ability to respond effectively, mitigate risks,
+and protect both human lives and natural ecosystems from the devastating impact
+of wildfires. In this project, we target the study of this monitoring scenario.
+
+We aim to create a data collection system capable of dealing with multiplatform
+and multi-sensor (multispectral imaging, humidity, temperature, and others)
+data to automatically build artificial intelligence models to predict wildfire
 risk in a coverage area.
 
 The data collection, data annotation, and data fusion system will handle
