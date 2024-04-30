@@ -6,8 +6,8 @@ subtitle: ''
 summary: ''
 authors:
 - Roberto Douglas Guimarães de Aquino
-- Vitor Venceslau Curtis
-- Filipe Alves Neto Verri
+- curtis
+- verri
 tags: []
 categories: []
 date: '2023-01-01'

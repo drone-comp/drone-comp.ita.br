@@ -6,14 +6,14 @@ subtitle: ''
 summary: ''
 authors:
 - Bruno S. Faiçal
-- Cesar A. C. Marcondes
-- Denis S. Loubach
-- Elton F. Sbruzzi
-- Filipe A. N. Verri
-- Johnny C. Marques
-- Lourenço A. Pereira
-- Marcos R. O. A. Maximo
-- Vitor V. Curtis
+- cmarcond
+- dloubach
+- elton
+- verri
+- johnny
+- ljr
+- mmaximo
+- curtis
 tags:
 - Drones;Safety;Smart cities;Costs;Atmospheric modeling;Decentralized control;Computer
   architecture

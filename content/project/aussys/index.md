@@ -37,6 +37,10 @@ url_video: ""
 slides: ""
 ---
 
+{{% callout note %}}
+This project has ended in December 2023.
+{{% /callout %}}
+
 Objectives:
 
 - Demonstrate aerial autonomous search and rescue systems (manned/unmanned),

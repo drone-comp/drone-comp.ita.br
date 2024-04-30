@@ -6,9 +6,11 @@ title: 'Synthetic data generation for digital twins: enabling production systems
 subtitle: ''
 summary: ''
 authors:
-- Leonardo Silveira, Roberto Douglas Guimaraes Aquino, Carlos Henrique Ribeiro, Anders
-  Skoogh Paulo Victor Lopes
-- Filipe Alves Neto Verri
+- Leonardo Silveira
+- Roberto Douglas Guimaraes Aquino
+- Carlos Henrique Ribeiro, Anders
+- Skoogh Paulo Victor Lopes
+- verri
 tags: []
 categories: []
 date: '2024-01-01'

@@ -6,8 +6,8 @@ subtitle: ''
 summary: ''
 authors:
 - Bruno S. Faiçal
-- Cesar A. C. Marcondes
-- Filipe A. N. Verri
+- cmarcondes
+- verri
 tags: []
 categories: []
 date: '2024-01-01'
@@ -28,7 +28,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: ['msibn']
 publishDate: '2024-04-30T17:14:52.289579Z'
 publication_types:
 - '2'

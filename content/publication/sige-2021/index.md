@@ -9,7 +9,7 @@ authors:
 - L. C. Giacomossi Jr
 - J. C. Matos
 - V. V. Curtis
-- F. A. N. Verri
+- verri
 tags: []
 categories: []
 date: '2021-01-01'

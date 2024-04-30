@@ -8,7 +8,7 @@ authors:
 - Filipe Loyola Lopes
 - Ronaldo Lopes Inocêncio Júnior
 - Victor Castro Nacif de Faria
-- Filipe Alves Neto Verri
+- verri
 - Ana Carolina Lorena
 tags: []
 categories: []

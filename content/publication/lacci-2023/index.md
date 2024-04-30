@@ -8,7 +8,7 @@ authors:
 - Roberto Douglas Guimaraes de Aquino
 - Joniel Bastos Barreto
 - Aline Do Nascimento Rodrigues
-- Filipe Alves Neto Verri
+- verri
 - Carlos Henrique Quartucci Forster
 tags:
 - Training;Sea surface;Sensitivity;Computational modeling;Autonomous aerial vehicles;Search
@@ -33,7 +33,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: [ aussys ]
 publishDate: '2024-04-30T17:14:52.598644Z'
 publication_types:
 - '1'

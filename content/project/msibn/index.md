@@ -37,6 +37,10 @@ url_video: ""
 slides: ""
 ---
 
+{{% callout note %}}
+This project has ended in April 2024.
+{{% /callout %}}
+
 Aerial navigation in GNSS contested environments is a challenge for both manned and
 unmanned aircraft. This research project aims to study and develop technologies and
 algorithms to address the problem of aerial navigation without relying on GNSS, focusing
