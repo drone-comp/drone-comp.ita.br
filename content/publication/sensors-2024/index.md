@@ -6,7 +6,7 @@ subtitle: ''
 summary: ''
 authors:
 - Bruno S. Faiçal
-- cmarcondes
+- cmarcond
 - verri
 tags: []
 categories: []

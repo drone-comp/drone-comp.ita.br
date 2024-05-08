@@ -10,7 +10,7 @@ authors:
 - Raphael Gomes Cortes
 - Huascar Mirko Montecinos Cortez
 - Caue Ferreira
-- cmarcondes
+- cmarcond
 - dloubach
 - elton
 - verri
