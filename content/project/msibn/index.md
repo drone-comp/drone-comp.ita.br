@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Multi-Sensor Image Based Navigation"
+title: "[Done] Multi-Sensor Image Based Navigation"
 summary: ""
-authors: [bsfaical, verri]
+authors: [bsfaical, cmarcond, verri]
 tags: []
 categories: []
 date: 2021-09-04T11:31:03-03:00

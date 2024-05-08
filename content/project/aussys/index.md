@@ -1,7 +1,8 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Autonomous Search System"
+# has finished
+title: "[Done] Autonomous Search System"
 summary: ""
 authors: [verri, johnny]
 tags: []
