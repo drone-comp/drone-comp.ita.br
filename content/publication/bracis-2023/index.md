@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: A Clustering Validation Index Based onÂ Semantic Description
+title: A Clustering Validation Index Based on Semantic Description
 subtitle: ''
 summary: ''
 authors:
