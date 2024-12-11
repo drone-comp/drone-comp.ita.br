@@ -43,5 +43,5 @@ social:
 email: ""
 highlight_name: true
 user_groups:
-- Researchers
+- Alumni
 ---

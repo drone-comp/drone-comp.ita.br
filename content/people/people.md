@@ -16,6 +16,7 @@ content:
   user_groups:
     - Researchers
     - Students
+    - Volunteers
     - Alumni
 design:
   show_interests: true

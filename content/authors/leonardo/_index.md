@@ -1,7 +1,7 @@
 ---
 title: Leonardo Silveira
 superuser: false
-role: Student
+role: Researcher
 
 organizations:
 - name: Aeronautics Institute of Technology
@@ -29,7 +29,7 @@ social:
 email: ""
 highlight_name: true
 user_groups:
-- Students
+- Volunteers
 ---
 
 Leonardo is a mechanical engineer, with a specialization in Finance, from the
