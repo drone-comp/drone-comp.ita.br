@@ -8,10 +8,7 @@ headless: true  # This file represents a page section.
 weight: 1  # Order that this section will appear.
 title: "DroneComp Research Group"
 subtitle: ""
-hero_media: hero.png
-design:
-  # Choose how many columns the section has. Valid values: 1 or 2.
-  columns: '1'
+hero_media: 'hero.png'
 advanced:
   css_style:
   css_class:
