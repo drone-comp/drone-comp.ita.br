@@ -1,0 +1,148 @@
+<aside id="page-header" class="page-header-image page-header-medium " style="background-image:url(/static/core/uploads/images/page/headers/about-us.jpg)">
+	<div class="page-header-inner">
+		<div class="page-header-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="page-header-box hide-to-bottom">
+							<h1>{{data.info.title}}</h1>
+							<hr />
+							<p class="lead">{{{data.info.content.brief}}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>
+
+<div id="page-content" role="main">
+	<div class="container">
+		<div id="content">
+
+			<div class="container-out container-light">
+				<div class="row">
+
+					<div class="col-sm-7">
+						<div class="title">
+							<h2 class="h3">{{../translation.about._title}}</h2>
+						</div>
+						<div class="text">
+							{{{data.info.content.extended}}}
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container-out">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="title title-section">
+							<h2>{{data.grad.title}}</h2>
+							{{{data.grad.content.brief}}}
+							<span class="sticker">
+								<i class="icon icomoon-library"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				{{#each data.geral}}
+					{{#ifEven @index}}
+						<div class="row row-inline">
+							<div class="col-sm-6">
+								<div class="thumbnail">
+									<img src="{{this.image.src}}" alt="{{this.title}}">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="title title-main">
+									<h4>{{this.title}}</h4>
+								</div>
+								<div class="text">
+									{{{this.content.brief}}}
+									<p><a href="/{{../language}}/post/{{this.slug}}" class="btn btn-dark">{{../translation.readMore}}</a></p>
+								</div>
+							</div>
+						</div>
+					{{else}}
+						<div class="row row-inline">
+							<div class="col-sm-6">
+								<div class="title title-main">
+									<h4>{{this.title}}</h4>
+								</div>
+								<div class="text">
+									{{{this.content.brief}}}
+									<p><a href="/{{../language}}/post/{{this.slug}}" class="btn btn-dark">{{../translation.readMore}}</a></p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="thumbnail">
+									<img src="{{this.image.src}}" alt="{{this.title}}">
+								</div>
+							</div>
+						</div>
+					{{/ifEven}}
+
+					<hr class="devider-margin-big" />
+				{{/each}}
+			</div>
+
+			<div class="container-out container-light">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="title title-section">
+							<h2>{{data.posgrad.title}}</h2>
+							{{{data.posgrad.content.brief}}}
+							<span class="sticker">
+								<i class="icon icomoon-library"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				{{#each data.pg}}
+					{{#ifEven @index}}
+						<div class="row row-inline">
+							<div class="col-sm-6">
+								<div class="thumbnail">
+									<img src="{{this.image.src}}" alt="{{this.title}}">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="title title-main">
+									<h4>{{this.title}} - {{this.subtitle}}</h4>
+								</div>
+								<div class="text">
+									{{{this.content.brief}}}
+									<p><a href="/{{../language}}/post/{{this.slug}}" class="btn btn-dark">{{../translation.readMore}}</a></p>
+								</div>
+							</div>
+						</div>
+					{{else}}
+						<div class="row row-inline">
+							<div class="col-sm-6">
+								<div class="title title-main">
+									<h4>{{this.title}} - {{this.subtitle}}</h4>
+								</div>
+								<div class="text">
+									{{{this.content.brief}}}
+									<p><a href="/{{../language}}/post/{{this.slug}}" class="btn btn-dark">{{../translation.readMore}}</a></p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="thumbnail">
+									<img src="{{this.image.src}}" alt="{{this.title}}">
+								</div>
+							</div>
+						</div>
+					{{/ifEven}}
+
+					<hr class="devider-margin-big" />
+				{{/each}}
+
+			</div>
+		</div>
+	</div>
+</div>

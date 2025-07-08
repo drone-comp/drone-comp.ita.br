@@ -1,0 +1,33 @@
+<div id="page-content" role="main">
+	<div class="container">
+		<div id="content">
+            <header class="devider-bottom devider-heavy devider-margin-medium">
+                <h1>{{data.category.name}}</h1>
+                <p class="excerpt">{{{data.category.description}}}</p>
+            </header>
+			<div class="grid-wrap">
+				<section id="projects" class="grid" data-columns="4">
+					{{#each data.list}}
+						<article class="project project-animated illustration design">
+							<div class="project-heading">
+								<div class="thumbnail">
+									<img src="{{this.image.src}}" alt="{{this.title}}">
+								</div>
+								<ul class="project-action">
+									<li><a class="lightbox btn btn-icon-view" href="{{this.image.src}}" data-fancybox-title="{{{this.content.brief}}}"
+										    data-fancybox-group="portfolio"></a></li>
+									<li><a class="link btn btn-icon-link" href="{{this.link}}" target="_blank"></a></li>
+								</ul>
+							</div>
+							<div class="project-content">
+								<div class="title">
+									<h2 class="h5">{{this.title}}</h2>
+								</div>
+							</div>
+						</article>
+					{{/each}}
+				</section>
+			</div>
+		</div>
+	</div>
+</div>

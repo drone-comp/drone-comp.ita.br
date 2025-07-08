@@ -1,0 +1,20 @@
+dn: cn=editor,dc=portal,dc=ita,dc=br
+cn: editor
+member: uid=maria@local.io
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=editor-graduacao,dc=portal,dc=ita,dc=br
+cn: editor-graduacao
+member: uid=sandra@local.io
+member: uid=rita@local.io
+member: uid=ricardo@local.io
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=editor-pos-graduacao,dc=portal,dc=ita,dc=br
+cn: editor-pos-graduacao
+member: uid=teresa@local.io
+member: uid=joao@local.io
+objectClass: groupOfNames
+objectClass: top

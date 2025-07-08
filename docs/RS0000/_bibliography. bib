@@ -1,0 +1,7 @@
+@inproceedings{kopp2018markdown,
+  title={Markdown Architectural Decision Records: Format and Tool Support.},
+  author={Kopp, Oliver and Armbruster, Anita and Zimmermann, Olaf},
+  booktitle={ZEUS},
+  pages={55--62},
+  year={2018}
+}

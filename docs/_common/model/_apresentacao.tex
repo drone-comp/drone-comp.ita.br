@@ -1,0 +1,316 @@
+\makeatletter
+    \def\input@path{{../_common/}}
+\makeatother
+
+\documentclass[usenames,dvipsnames]{gt-beamer}
+
+%
+% begin MINTED
+%
+%   ATENÇÃO
+%
+%   Esta classe está usando o pacote "minted", que por usa vez depende de
+%   Python 2.6+ e da biblioteca "pygmentize" do Python
+%
+%   No MacOS basta usar o comando abaixo para instalar o pygmentize:
+%
+%       sudo easy_install pygments
+%
+%   Além disto, o pdflatex precisa do parâmetro "-shell-escape" para invocar o
+%   "pygments".
+%
+%   O arquivo "Makefile" já inclui o parâmetro, mas caso utilize alguma IDE
+%   esteja atento para este fato - e não habilite o parâmetro "-shell-escape"
+%   de modo global, mas para apenas documentos específicos - isto pode representar uma
+%   falha de segurança enorme!
+%
+% \usepackage[newfloat]{minted}
+%
+% end MINTED
+%
+
+\input{Referencias/glossario}
+
+% \setbeameroption{show notes}    % Comente esta linha para não imprimir as anotações
+
+%
+% Definir como "digital" ou "printed" para ter a versão para ser distribuída digitalmente ou impressa
+% Cada pesquisador define o conteúdo a ser impresso ou não com blocos:
+%
+% \begin{shownto}{digital}
+% . . .
+% \end{shownto}
+%
+% \SetNewAudience{printed}
+% \SetNewAudience{digital}
+% \DefCurrentAudience{printed}
+
+\graphicspath{{./anexos/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\title{Geração Automática de Testes}
+
+\subtitle{Testes Generativos}
+
+\institute[ITA]
+{
+  \inst{1}Instituto Tecnológico de Aeronáutica - ITA
+}
+
+\author[ADA] {
+    Pesq. \textbf{Lovelace}, A.\inst{1}\\
+    Prof. Dr. \textbf{Torvalds}, L.\inst{1}
+}
+
+\us{9999}
+
+\usSprint{33}{Fev-2020}
+
+\date[\usDate]{Projeto STAMPS,~Sprint~\usSprint,~US~\usNumber}
+
+\subject{Testes de Software, Testes Generativos, Automação de Testes de Software, Geração Automática de Testes}
+
+\begin{document}
+
+%
+% Trecho de código que será inserido num bloco colorizado pelo minted
+%
+%     \defverbatim[colored]\kleeExemplo{
+%         \begin{minted}[breaklines]{c}
+% int main() {
+% int x, y;
+%
+% klee_make_symbolic(&x, sizeof(x), "x");
+% klee_make_symbolic(&y, sizeof(y), "y");
+% int *p = f(x, y);
+% return 0;
+% }
+%         \end{minted}
+%     }
+%
+% . . .
+%
+% Depois no bloco:
+%
+% \begin{block}{Execução simbólica - função}
+%     \kleeExemplo
+% \end{block}
+%
+
+    % \usTOC                % - Apresenta frames intermediários com a agenda da apresentação
+
+    \usCover{ita_logo}
+
+    \section{A User Story}
+
+    \begin{frame}[allowframebreaks]
+    	\frametitle{Sprint \usSprint, \usDate}
+
+        \usStory
+            {aplicar uma template à apresentação}
+            {facilitar a vida do pesquisador}
+
+        \begin{block}{Critérios de Aceitação}
+            \begin{enumerate}
+                \item
+                    \usCriteria
+                        {uma template}
+                        {for bonita e funcional}
+                        {usar para fazer a apresentação}
+                \item
+                    \usCriteria
+                        {outra template}
+                        {for feia e disfuncional}
+                        {descartar}
+            \end{enumerate}
+        \end{block}
+
+    \end{frame}
+
+    \section{Introdução}
+
+    \begin{frame}[allowframebreaks]
+        \frametitle{Cenário}
+
+        \begin{block}{Caos na \textit{Sprint Review}}
+            \begin{enumerate}
+                \item Reportado erro crítico na template;
+                \item Encerrar a questão.
+            \end{enumerate}
+        \end{block}
+
+    \end{frame}
+
+    \note{
+        \begin{itemize}
+            \item Isto é uma nota de apresentação que somente será mostrada se aquele primeiro comentário lá em cima for ``descomentado'';
+            \item Estamos fazendo na forma de ítens para facilitar a organização e leitura;
+            \item O apresentador gera uma versão com as notas para si próprio;
+            \item E outra versão é gerada para apresentar no telão (sem as notas).
+        \end{itemize}
+    }
+    \note{
+        \begin{itemize}
+            \item Outro bloco de notas - será apresentado numa nova página de notas;
+            \item A numeração de páginas da apresentação não muda!
+        \end{itemize}
+    }
+
+    \begin{frame}[allowframebreaks]
+        \frametitle{Os custos de uma péssima apresentação}
+
+        \begin{block}{Custos com erros que repercutem durante a apresentação}
+            \begin{enumerate}
+                \item Cochilos;
+                \item Broncas do coordenador do projeto;
+                \item Desinteresse dos ``stake-holders'' em prosseguir com a pesquisa.
+            \end{enumerate}
+        \end{block}
+    \end{frame}
+
+    \addtocontents{toc}{\newpage}
+
+    \section{Evolução}
+
+    \begin{frame}[allowframebreaks]
+        \frametitle{Organização do trabalho}
+
+        \begin{block}{Aonde queremos chegar}
+            \begin{enumerate}
+                \item \color{WildStrawberry}Apresentar;
+                \item \color{OliveGreen}De forma;
+                \item \color{MidnightBlue}Organizada.
+            \end{enumerate}
+        \end{block}
+
+    \end{frame}
+
+    \note{
+        \begin{itemize}
+            \item Para realizar este trabalho, iniciamos por um diagnóstico da implementação de apresentações;
+            \item Fizemos um beamer;
+            \item Que depois foi convertido na presente classe.
+        \end{itemize}
+    }
+
+    \addtocontents{toc}{\newpage}
+
+    \section{Resultados}
+
+    \begin{frame}[allowframebreaks]
+        \frametitle{Notas sobre os resultados e anexos}
+
+        \begin{block}{Números}
+            \begin{enumerate}
+                \item $\sim 40.000$ linhas de código
+                \item $\sim 1.240$ funções públicas
+                \item $\sim 100$ testes ``integrados''
+                \item $0$ testes ``unitários''
+            \end{enumerate}
+        \end{block}
+
+    \end{frame}
+
+    \section{Conclusão}
+
+    \begin{frame}[allowframebreaks]
+        \frametitle{Conclusão}
+
+        \usStory
+            {aplicar uma template à apresentação}
+            {facilitar a vida do pesquisador}
+
+        \begin{block}{Critérios de Aceitação}
+            \begin{enumerate}
+                \item
+                    \usCriteria
+                        {uma template}
+                        {for bonita e funcional}
+                        {usar para fazer a apresentação}
+                \item
+                    \usCriteria
+                        {outra template}
+                        {for feia e disfuncional}
+                        {descartar}
+            \end{enumerate}
+        \end{block}
+
+        \begin{block}{Checklist}
+            \begin{itemize}
+                \item Critérios de Aceitação
+                    \begin{itemize}
+                        \item Template Bonita - \color{green}\ding{52}\color{black}
+                        \item Template Feia - \color{red}\ding{56}\color{black}
+                    \end{itemize}
+                \item Objetivos - \color{green}\ding{52}\color{black}
+            \end{itemize}
+        \end{block}
+
+        \framebreak
+
+        \begin{block}{Genéricas}
+            \begin{itemize}
+                \item Soluções atendem qualquer tipo de apresentação;
+                \item Podem ser adotadas por qualquer tamanho de equipe.
+            \end{itemize}
+        \end{block}
+
+        \note{
+            \begin{itemize}
+                \item As soluções adotadas neste trabalho atendem a qualquer tipo de projeto de pesquisa e foram baseados em nossa experiência em projetos de naturezas, portes, plataformas e arquiteturas variadas e podem ser aplicados tanto por equipes de um homem só quanto por grandes times multidisciplinares.
+            \end{itemize}
+        }
+
+        \framebreak
+
+        \begin{block}{Específicas}
+            \begin{itemize}
+                \item Soluções apresentadas não se limitam somente à pesquisas;
+                \item Teses podem ser apresentadas utilizando-se esta template.
+            \end{itemize}
+        \end{block}
+
+        \note{
+            \begin{itemize}
+                \item Algumas das recomendações e sugestões apresentadas pelo presente relatório e resumidas a seguir não se limitam somente à apresentações.
+            \end{itemize}
+        }
+
+    \end{frame}
+
+    \note{
+        \begin{itemize}
+            \item Assim, partindo-se do cenário apresentado e dos critérios de aceitação propostos, iniciamos com uma apresentação.
+            \item A adoção das técnicas apresentadas e resumidas na seção de recomendações deste relatório garantem a mitigação dos problemas encontrados com a baixa padronização das apresentações.
+        \end{itemize}
+    }
+
+    \begin{frame}[allowframebreaks]
+        \frametitle{Sugestões \& Recomendações}
+
+        \begin{block}{Recomendações}
+            \begin{itemize}
+                \item Implementar algumas coisas por meio de \color{blue}cor azul\color{black};
+                \item Outras devem ser \color{orange}laranja\color{black}.
+            \end{itemize}
+        \end{block}
+
+        \framebreak
+
+        \begin{block}{Sugestões}
+            \begin{itemize}
+                \item Separação de cores e contrastes.
+            \end{itemize}
+        \end{block}
+
+        \note{
+            \begin{itemize}
+                \item Seria uma solução ótima do ponto de vista de separação de preocupações e níveis de abstração.
+            \end{itemize}
+        }
+
+    \end{frame}
+
+    \usFinish{XKCD_is_it_worth_the_time}
+
+\end{document}

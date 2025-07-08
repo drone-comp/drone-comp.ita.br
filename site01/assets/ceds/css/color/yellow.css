@@ -1,0 +1,331 @@
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover,
+a,
+.dropcap.clean {
+	color: #ffcc00;
+}
+.highlight {
+	background-color: #ffcc00;
+}
+
+/* ::::::::::::::::: */
+/* : END Body copy : */
+/* ::::::::::::::::: */
+
+
+
+/* :::::::::::: */
+/* : Dropcaps : */
+/* :::::::::::: */
+.dropcap.clean {
+	color: #ffcc00;
+}
+/* :::::::::::::::: */
+/* : END Dropcaps : */
+/* :::::::::::::::: */
+
+
+
+/* ::::::::::::: */
+/* : Bockquote : */
+/* ::::::::::::: */
+blockquote:before,
+blockquote .author {
+	color: #ffcc00;
+}
+/* ::::::::::::::::: */
+/* : END Bockquote : */
+/* ::::::::::::::::: */
+
+
+
+/* :::::::: */
+/* : List : */
+/* :::::::: */
+.arrow li:before, .circle li:before, .check li:before,
+.plus li:before, .dash li:before {
+	color: #ffcc00;
+}
+/* :::::::::::: */
+/* : END List : */
+/* :::::::::::: */
+
+
+
+/* ::::::::::: */
+/* : Buttons : */
+/* ::::::::::: */
+.btn {
+	background-color: #ffcc00;
+	border: 1px solid #ffcc00;
+}
+	.btn:hover {
+		background-color: #ffd633;
+		border-color: #ffd633;
+	}
+	.btn:active {
+		border-color: #ffcc00;
+	}
+
+/* ::::::::::::::: */
+/* : END Buttons : */
+/* ::::::::::::::: */
+
+
+
+/* :::::::::::: */
+/* : Progress : */
+/* :::::::::::: */
+.skill .bar,
+.progress .bar {
+	background-color: #ffcc00;
+}
+/* :::::::::::::::: */
+/* : END Progress : */
+/* :::::::::::::::: */
+
+
+
+/* :::::::: */
+/* : Form : */
+/* :::::::: */
+select:focus,
+.form-control:focus {
+	border-color: #ffcc00;
+	-webkit-box-shadow: 0 0 0 2px #ffcc00;
+	box-shadow: 0 0 0 2px #ffcc00;
+}
+/* :::::::::::: */
+/* : END Form : */
+/* :::::::::::: */
+
+
+
+/* ::::::::::::::: */
+/* : Breadceumbs : */
+/* ::::::::::::::: */
+body #page-header .breadcrumbs ul li.current a,
+body #page-header .breadcrumbs ul li a:hover {
+	color: #7E490F;
+}
+/* ::::::::::::::::::: */
+/* : END Breadceumbs : */
+/* ::::::::::::::::::: */
+
+
+
+/* :::::::::::::::: */
+/* : Filter & Nav : */
+/* :::::::::::::::: */
+.project-filter ul li a:hover,
+.project-filter ul li a.active {
+	color: #ffcc00;
+}
+.project-filter ul:hover li.selector {
+	background-color: #ffcc00;
+}
+/* :::::::::::::::::::: */
+/* : END Filter & Nav : */
+/* :::::::::::::::::::: */
+
+
+
+/* Twitter */
+.tweet-heading .title a:hover,
+.tweet-content .tweet-actions a:hover {
+	color: #ffcc00;
+}
+
+/* Main menu */
+#main-menu ul.megamenu-category .category-content .iconbox:hover .title > * {
+	color: #ffcc00;
+}
+@media (min-width: 992px) {
+	#main-menu > li.active > a,
+	#main-menu > li:hover > a {
+		color: #ffcc00;
+	}
+}
+
+/* Section title */
+.title.title-section .sticker .icon {
+	background-color: #ffcc00;
+}
+.title.title-section .sticker .icon:after {
+	border-top-color: #ffcc00;
+}
+/*Nav list */
+#page-content .nav ul li a:hover {
+	color: #ffcc00;
+}
+
+/* Date */
+.article-date {
+	background-color: #ffcc00;
+}
+.article-date:after {
+	border-top-color: #ffcc00;
+}
+
+/* Article Nav */
+.article-nav ul li.selector a:hover {
+	background-color: #ffcc00;
+}
+.article-nav a:hover,
+.article-nav a:hover:before,
+#page-content .article-nav a:hover,
+#page-content .article-nav a:hover:before {
+	color: #ffcc00;
+}
+
+/* Tags */
+#footer .tags p a:hover,
+.tags p a:hover {
+	background: #ffcc00;
+}
+
+
+/* :::: */
+/* : POST TYPE : Single
+/* :::: */
+.post-content > .type {
+	background-color: #ffcc00;
+}
+.post-content > .type:after {
+	border-top-color: #ffcc00;
+}
+
+/* Timeline */
+.timeline li.year {
+	background-color: #ffcc00;
+}
+
+
+
+/* :::::::::::: */
+/* : Icon Box : */
+/* :::::::::::: */
+
+/* Style 2 & 3*/
+.container-dark .iconbox.iconbox-style2 .iconbox-heading .icon:before,
+.container-dark .iconbox.iconbox-style3 .iconbox-heading .icon:before,
+.container-dark .iconbox.iconbox-style2 .iconbox-heading .icon:after,
+.container-dark .iconbox.iconbox-style3 .iconbox-heading .icon:after,
+.container-image .iconbox.iconbox-style2 .iconbox-heading .icon:before,
+.container-image .iconbox.iconbox-style3 .iconbox-heading .icon:before,
+.container-image .iconbox.iconbox-style2 .iconbox-heading .icon:after,
+.container-image .iconbox.iconbox-style3 .iconbox-heading .icon:after {
+	background-color: rgba(255, 204, 0, 0.5);
+}
+/* :::::::::::::::: */
+/* : END Icon Box : */
+/* :::::::::::::::: */
+
+
+
+/* ::::::::::::::::: */
+/* : Call 2 Action : */
+/* ::::::::::::::::: */
+
+/* Colored */
+.call2action.call2action-colored {
+	border-color: #ffcc00;
+	background-color: #ffd633;
+	color: #7E490F;
+}
+.call2action.call2action-colored a {
+	color: #7E490F;
+}
+/* ::::::::::::::::::::: */
+/* : END Call 2 Action : */
+/* ::::::::::::::::::::: */
+
+
+
+/* ::::::::::::::: */
+/* : Testimonial : */
+/* ::::::::::::::: */
+
+/* Colored */
+.testimonial-wrap.testimonial-colored .testimonial-inner {
+	border-color: #ffcc00;
+	background-color: #ffd633;
+	color: #7E490F;
+}
+.testimonial-wrap.testimonial-colored .testimonial-outer:before {
+	border-top-color: #ffcc00;
+}
+	.testimonial-wrap.testimonial-colored .testimonial-outer:after {
+		border-top-color:  #ffd633;
+	}
+/* ::::::::::::::::::: */
+/* : END Testimonial : */
+/* ::::::::::::::::::: */
+
+
+
+/* ::::::: */
+/* : Tab : */
+/* ::::::: */
+
+/* Colored */
+.tab.tab-colored .tab-heading {
+	border-color: #ffcc00;
+	background-color: #ffd633;
+}
+	.tab.tab-colored .tab-heading li {
+		border-color: #ffcc00;
+	}
+		.tab.tab-colored .tab-heading li:hover a,
+		.tab.tab-colored .tab-heading li.current a {
+			background-color: #ffcc00;
+		}
+		.tab.tab-colored .tab-heading li a,
+		.tab.tab-colored .tab-heading li:hover a,
+		.tab.tab-colored .tab-heading li.current a {
+			color: #7E490F;
+		}
+
+/* ::::::::::: */
+/* : END Tab : */
+/* ::::::::::: */
+
+
+
+/* ::::::::::::: */
+/* : Accordion : */
+/* ::::::::::::: */
+.accordion > div.active .accordion-heading a,
+.accordion > div .accordion-heading a:hover {
+	color: #ffcc00;
+}
+
+/* Colored */
+.accordion.accordion-colored .accordion-heading {
+	border-color: #ffcc00;
+	background-color: #ffd633;
+}
+.accordion.accordion-colored .active .accordion-heading a,
+.accordion.accordion-colored .accordion-heading a:hover {
+	background-color: #ffcc00;
+}
+.accordion.accordion-colored .active .accordion-heading a,
+.accordion.accordion-colored .accordion-heading a:hover,
+.accordion.accordion-colored .accordion-heading a {
+	color: #7E490F;
+}
+/* ::::::::::::::::: */
+/* : END Accordion : */
+/* ::::::::::::::::: */
+
+
+
+/* ::::::::::::::::: */
+/* : Pricing Table : */
+/* ::::::::::::::::: */
+.pricing.pricing-style1 .pricing-content h5 {
+	color: #ffcc00;
+}
+/* ::::::::::::::::::::: */
+/* : END Pricing Table : */
+/* ::::::::::::::::::::: */

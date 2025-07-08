@@ -1,0 +1,48 @@
+dn: ou=users,dc=ita,dc=br
+ou: users
+objectClass: organizationalUnit
+objectClass: top
+
+dn: ou=internal,ou=users,dc=ita,dc=br
+ou: internal
+objectClass: organizationalUnit
+objectClass: top
+
+dn: uid=evillani@ita.br,ou=internal,ou=users,dc=ita,dc=br
+uid: evillani@ita.br
+objectClass: simpleSecurityObject
+objectClass: account
+objectClass: top
+userPassword: ep4ssw04d
+
+dn: uid=danielle@ita.br,ou=internal,ou=users,dc=ita,dc=br
+uid: danielle@ita.br
+objectClass: simpleSecurityObject
+objectClass: account
+objectClass: top
+userPassword: dp4ssw04d
+
+dn: uid=talita@ita.br,ou=internal,ou=users,dc=ita,dc=br
+uid: talita@ita.br
+objectClass: simpleSecurityObject
+objectClass: account
+objectClass: top
+userPassword: tp4ssw04d
+
+dn: cn=editor,ou=internal,ou=users,dc=ita,dc=br
+cn: editor
+member: uid=evillani@ita.br
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=editor-graduacao,ou=internal,ou=users,dc=ita,dc=br
+cn: editor-graduacao
+member: uid=danielle@ita.br
+objectClass: groupOfNames
+objectClass: top
+
+dn: cn=editor-pos-graduacao,ou=internal,ou=users,dc=ita,dc=br
+cn: editor-pos-graduacao
+member: uid=talita@ita.br
+objectClass: groupOfNames
+objectClass: top

@@ -1,0 +1,19 @@
+Solução 02:
+na <seleção de um framework para o gerenciamento de conteúdo do Portal>
+face <a questão de se utilizar aplicativos de gerenciamento de conteúdo (CMS - Content Management Systems) ou frameworks voltados à construção de gerenciadores de conteúdos>
+decidimos <pela adoção de um framework voltado a construção de um gerenciador de conteúdo>
+para atingir <fatores prós: 
+    1) código livre e escrito em linguagem de programação entre as dez melhores classificadas no índice TIOBE,
+    2) simplicidade de uso pelo usuário final,
+    3) simplicidade de manutenção pelos técnicos responsáveis por manter o site operacional, e
+    4) flexibilidade no atendimento específico e pontual de necessidades da instituição
+>
+aceitando <fatores contras: 
+    1) a necessidade de que possíveis evoluções do site demandariam conhecimentos de programação e
+    2) a possibilidade de não se encontrar soluções prontas para determinadas facilidades
+>
+porque <
+    1) soluções como Drupal ou Wordpress prometem mas não cumprem a possibilidade de construir e manter um site de conteúdo sem a necessidade de programação,
+    2) muitas das soluções prontas não são compatíveis entre si e muitos fornecedores adicionam recursos adicionais que para serem utilizados devem ser pagos, e
+    3) apesar de pagos a qualidade é algumas vezes duvidosa, a configuração dos recursos adicionais é complexa e em nossa experiência trabalhosa e cheia de percalços
+>

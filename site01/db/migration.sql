@@ -1,0 +1,1 @@
+Select t1.title 'title', t2.body_value 'extended', t2.body_summary 'brief', date_format(t1.created, '%Y-%m-%d') 'createdAt', date_format(t1.changed, '%Y-%m-%d') 'updatedAt' from `node` as t1 left join `field_revision_body` as t2 ON t1.vid = t2.revision_id where t2.body_value is not null and t2.body_summary is not null

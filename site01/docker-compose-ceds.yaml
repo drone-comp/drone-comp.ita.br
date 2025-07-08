@@ -1,0 +1,23 @@
+services:
+  ceds:
+    container_name: ceds
+    image: ceds:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.ceds
+    expose:
+      - "3002"
+    networks:
+      - netlab01
+    volumes:
+      - $PWD/config:/ceds/site01/config
+      - cedsdata:/app/assets/static/core/uploads
+
+volumes:
+  cedsdata:
+    name: cedsdata
+    external: true
+
+networks:
+  netlab01:
+    external: true

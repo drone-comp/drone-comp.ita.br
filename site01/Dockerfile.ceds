@@ -1,0 +1,23 @@
+FROM node:18.20.4-alpine3.19
+
+EXPOSE 3002
+
+RUN adduser -u 1005 gpes -D
+
+WORKDIR /app
+
+COPY package*.json .
+
+RUN npm i pm2 -g
+
+COPY . .
+
+RUN chown -R gpes:gpes /app
+
+USER gpes
+
+RUN npm i
+RUN ln -s /app/assets/ceds /app/assets/static
+RUN mkdir -p /app/assets/static/core/uploads/Archive
+
+CMD [ "pm2-runtime", "start", "ecosystem.config.js", "--env", "ceds" ]

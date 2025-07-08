@@ -1,0 +1,10 @@
+!.dockerignore
+.gitignore
+!Dockerfile
+db
+files
+scripts
+test
+*.md
+*.ldif
+docker-compose.yaml

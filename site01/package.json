@@ -1,0 +1,41 @@
+{
+    "name": "portal-ita",
+    "version": "0.0.2",
+    "description": "Portal Institucional do Instituto Tecnológico de Aeronáutica",
+    "main": "server.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "app-module-path": "^2.2.0",
+        "app-root-path": "^3.0.0",
+        "capstone-file-manager": "^1.0.3",
+        "capstone-intl": "^3.1.6",
+        "capstonejs": "^4.2.23-a",
+        "connect-mongo": "^3.2.0",
+        "dotenv": "^8.1.0",
+        "expect-ct": "^0.3.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0",
+        "express-winston": "^4.0.5",
+        "handlebars": "4.5.3",
+        "handlebars-helpers": "^0.10.0",
+        "helmet": "^4.4.1",
+        "helper-moment": "^0.2.0",
+        "keystone-email": "^1.1.0",
+        "lodash": "^4.17.21",
+        "mime-types": "^2.1.25",
+        "template-helpers": "^1.0.1",
+        "tinymce": "^4.9.11",
+        "winston": "^3.3.3",
+        "winston-daily-rotate-file": "^4.5.0"
+    },
+    "devDependencies": {
+        "chai": "^4.3.4",
+        "mocha": "^8.3.2",
+        "node-icecream": "^1.0.0",
+        "selenium-webdriver": "^4.0.0-beta.2"
+    }
+}

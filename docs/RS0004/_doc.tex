@@ -1,0 +1,182 @@
+\section{Guia do Operador}\label{RS0001:operator}
+
+\subsection{Sistemas Operacionais}
+
+O Portal Institucional do ITA foi desenvolvido sub um sistema operacional compatível com \textbf{Unix}, porém não deve apresentar desafio algum para quem utilizar outro tipo de sistema operacional, como o \textbf{Windows} por exemplo.
+
+Este guia dedica-se exclusivamente à operação do portal e nenhuma referência à dependências de sistema operacional é feita.
+
+\subsection{Inicialização do serviço do portal e Painel Administrativo}
+
+O Portal Institucional do ITA foi desenvolvido em \textbf{JavaScript} e roda sob \textbf{NodeJS}. Para maiores detalhes pode ser consultado o Guia do Desenvolvedor.
+
+A inicialização é feita pelo ``\textit{Script}'' chamado $server.js$ que se encontra na raiz do diretório do portal.
+
+Por conta das primeira definições feitas neste ``\textit{Script}'', estas definições não são customizáveis.
+
+\begin{itemize}
+    \item Pasta $config$ - esta pasta contém as configurações do portal
+    \item Arquivo $.env$ - este arquivo contém a definição da configuração geral desejada\footnote{O ``\textit{Script}'' de execução define uma variável que contém o arquivo de configuração geral ativado durante a execução como serviço pelo sistema operacional.}
+\end{itemize}
+
+O ``\textit{Script}'' de inicialização como serviço de sistema operacional é o padrão adotado no Linux, tanto \textbf{Debian} quanto \textbf{RedHat}.
+
+\begin{code}
+    \inputminted[label=portal,firstline=1,lastline=35]{Shell}{../RS0004/anexos/portal}
+    \caption{``\textit{Script}'' de Inicialização}\label{RS0004:code:init}
+\end{code}
+
+Entre as linhas $1$ e $35$ temos a inicialização das variáveis de ambiente, com destaque a linha $6$ onde definimos o arquivo de configuração da pasta $config$ que será carregado durante a inicialização.
+
+\begin{code}
+    \inputminted[label=portal,firstline=57,lastline=75]{Shell}{../RS0004/anexos/portal}
+    \caption{``\textit{Script}'' de Inicialização}\label{RS0004:code:start}
+\end{code}
+
+Da linha $57$ até a linha $75$ temos a inicialização do serviço \textbf{NodeJS} e o ``\textit{Script}'' da aplicação definido nas linhas $8$ e $9$ é chamado.
+
+\subsubsection{Configuração}
+
+A configuração do portal se faz por meio de variáveis de ambiente e arquivos de configuração. O primeiro arquivo de configuração é inicializado pelo ``\textit{Script}'' $server.js$ que lê o arquivo $.env$ e determina qual o arquivo de configuração seguinte que deve ser lido. Isto permite que várias configurações sejam criadas e escolhidas pelo operador. Por exemplo, existe uma configuração na pasta $config$ chamada $maintenance.js$ que serve para colocar o portal em modo de manutenção (apresenta uma página informando aos usuários que o portal está fora do ar).
+
+\begin{code}
+    \inputminted[label=.env]{Shell}{../RS0004/anexos/env}
+    \caption{Definição do arquivo de configuração}\label{RS0004:code:env}
+\end{code}
+
+A configuração utilizada no desenvolvimento chama-se $validation.js$, enquanto que a utilizada no ambiente de testes do ITA chama-se $test.js$. Uma nova configuração chamada $production.js$ existe para o ambiente de produção.
+
+\begin{displayquote}
+    É responsabilidade do operador, em conjunto com o desenvolvedor, manter estes arquivos de configuração. Recomenda-se que o arquivo $production.js$ seja protegido pelo operador e modificado apenas por este.
+\end{displayquote}
+
+\begin{code}
+    \inputminted[label=validation.js]{JavaScript}{../RS0004/anexos/validation.js}
+    \caption{Arquivo de configuração do ambiente de desenvolvimento}\label{RS0004:code:validation}
+\end{code}
+
+\begin{displayquote}
+    Uma atenção especial deve ser dada ao arquivo de configuração $default.js$. Toda e qualquer configuração que exister em $default.js$ será \textbf{sobreposta} por $validation.js$ (ou $test.js$ ou $production.js$) se a mesma configuração existir neste último. Porém, caso a configuração não seja definida para nenhum destes arquivos, então a configuração em $default.js$ irá prevalecer.
+\end{displayquote}
+
+Na \cref{RS0004:code:validation} mostramos a configuração do ambiente de desenvolvimento. As configurações são válidas para um ambiente de produção, importanto apenas os valores informados, portanto usaremos esta como exemplo.
+
+Uma configuração importante é a do banco de dados \textbf{MongoDB} a ser utilizado (esta informação é importante para ser utilizada nas rotinas de ``\textit{Backup}'' que abordaremos mais a seguir). Na linha $3$ temos a chamada ``\textit{connection string}'' do \textbf{MongoDB} padrão. Em seguida temos uma chave criptográfica aleatória que serve para assinar os ``\textit{cookies}'' de sessão do portal\footnote{Uma nota importante a ser feita aqui é que em momento algum o portal guarda informações pessoais de seja quem for que estiver navegando por suas páginas e este ``\textit{cookie}'' é criado para ser usado pelo Painel Administrativo, e portanto \textbf{não é necessário pedir consentimento do usuário para este cookie} pois nada será compartilhado com terceiros. Observe que isto deixa de ser verdade se eventualmente o portal for modificado para inclusão de ``\textit{Scripts}'' de terceiros como \textit{trackers} do Google e conexões com redes sociais.}
+
+Em seguida, na linha $6$ é feita uma configuração básica de controle de acessos - a definição de quais categorias irão compor a página inicial do portal. Os códigos das categorias desejadas, deve ser o $_Id$ (ver documentação do \textbf{MongoDB} sobre atributos internos do documento) de cada uma (é possível usar uma \textit{Array} de \textit{Strings} \textit{JavaScript} para várias valores neste parâmetro).
+
+O \textbf{CapstoneJS} irá usar este parâmetro para determinar quais publicações poderão aparecer na página principal, e a princípio, o controle de acessos deve ser configurado para determinar quem poderá incluir publicações nestas categorias (ver manual correspondente).
+
+Em seguida, entre as linhas $9$ e $37$ são definidas publicações utilizadas para diversos ítens do menu do portal. Em particular, entre as linhas $38$ e $56$ definimos os valores para o painel de contato do portal.
+
+Este foi apenas um exemplo, e muitos destes valores estão também definidos no arquivo $default.js$ e servem apenas para ilustrar o fato de que os valores em $default.js$ serão sobrepostos por estes no ambiente do desenvolvedor, e poderão sê-lo também no ambiente de produção. Uma configuração mínima pode ser a da \cref{RS0004:code:atlas} por exemplo.
+
+\begin{code}
+    \inputminted[label=atlas.js]{JavaScript}{../RS0004/anexos/atlas.js}
+    \caption{Arquivo de configuração do banco de dados}\label{RS0004:code:atlas}
+\end{code}
+
+Vamos agora entrar em maiores detalhes nos parâmetros mais importantes e vamos listar o arquivo $default.js$.
+
+\begin{code}
+    \inputminted[label=default.js,firstline=1,lastline=10]{JavaScript}{../RS0004/anexos/default.js}
+    \caption{Definições para o mecanismo de configuração do portal}\label{RS0004:code:default-head}
+\end{code}
+
+Entre as linhas $3$ e $8$ definimos os componentes utilizados pelo mecanismo de configuração do portal.
+
+Na linha $10$ definimos em que diretório desejamos ``despejar'' os arquivos que os editores colocarem à disposição dos usuários para baixarem em seus computadores (esta informação é importante para ser utilizada nas rotinas de ``\textit{Backup}'' que abordaremos mais a seguir).
+
+\begin{code}
+    \inputminted[label=default.js,firstline=12,lastline=86]{JavaScript}{../RS0004/anexos/default.js}
+    \caption{Configuração geral do portal}\label{RS0004:code:default-body}
+\end{code}
+
+Logo na linha $14$ utilizamos a definição que fizemos na linha $10$.
+
+Em seguida, fazemos definições gerais para o $CapstoneJS$. Informações para a maioria destes parâmetros pode ser encontrada no site do projeto de referência ($KeystoneJS - versão 4$), mas destacaremos os mais importantes:
+
+\begin{enumerate}
+    \setcounter{enumi}{19}
+    \item Conteúdo estático - $static$ aponta para a pasta onde estará o conteúdo estático do portal, como arquivos \textbf{JavaScript} e folhas de estilo \textbf{CSS} que serão servidos ao cliente por meio do ``\textit{Browser}''
+    \setcounter{enumi}{22}
+    \item Atualização automática - esta opção irá ler um ``\textit{Script}'' em \textbf{JavaScript} na pasta denominada $update$ contendo dados no formato \textbf{JSON} para atualizar o banco de dados (veja exemplo na \cref{RS0004:code:first-user})
+    \item Registros de usuários - definine o nome da estrutura de dados que irá conter o registro de usuários do painel de controle do portal (ver Guia do Desenvolvedor)
+    \setcounter{enumi}{25}
+    \item Porta - define a porta de comunicação para o servidor de aplicações \textbf{NodeJS}
+    \item \setcounter{enumi}{27}
+    \item Ativa o armazenamento da sessão num serviço externo ao próprio portal\footnote(A sessão utilizada pelo portal não armazena dados pessoais do usuário e não é utilizada de modo algum para rastreamento do usuário pela internet.)
+    \item Armazenamento de sessões - define o serviço de dados que irá conter registro das sessões do Painel Administrativo
+    \item \gls{URI} do Painel Administrativo - caminho que a partir do endereço do portal podemos acessar o Painel Administrativo
+    \item Logotipo da organização
+\end{enumerate}
+
+\begin{code}
+    \inputminted[label=first-user.js]{JavaScript}{../RS0004/anexos/0.0.1-first-user.js}
+    \caption{Exemplo de inclusão do primeiro usuário no banco de dados do portal}\label{RS0004:code:first-user}
+\end{code}
+
+Uma atenção especial deve ser dada à configuração da autenticação com um servidor \gls{LDAP}.
+
+Caso não exista um servidor \gls{LDAP} disponível, as linhas de $33$ até $35$ devem ser comentadas (como no exemplo na \cref{RS0004:code:default-body}) e o mecanismo de controle de acesso irá automaticamente usar a definição de acesso do parâmetro $ldap default role$. A configuração em $ldap default role$ deve ser definida no arquivo $rules.js$ como todas as demais (ver Controle de Acesso).
+
+\begin{displayquote}
+    No exemplo foi usada $'cn=admin,dc=portal,dc=ita,dc=br'$ que em rules está definida como um usuário de acesso total ao Painel, o que pode ser útil para fazer ajustes emergenciais de curto prazo, mas que não é recomendado fazer para o Portal em produção.
+\end{displayquote}
+
+Em seguida, entre as linha $51$ e $57$ temos a definição dos arquivos que irão conter os registros de eventos do portal que serão repassados ao $CapstoneJS$.
+
+nas linhas $59$ e $60$ temos mais definições para o gerenciador de arquivos. Na linha $62$ temos as linguagens disponíveis para o módulo de traduções e na linha $63$ a linguagem a ser usada como padrão pelo portal.
+
+Todas as demais linhas são definições do \textbf{NodeJS} e \textbf{ExpressJS} (ver Guia do Desenvolvedor).
+
+\subsection{Backup}
+
+De modo geral, o Portal Institucional é mantido pelos desenvolvedores num repositório de fontes que é versionado e portanto não deve haver necessidade de se manter cópias de segurança do próprio conteúdo estático.
+
+Porém o conteúdo dinâmico (publicações, imagens e arquivos dos usuários) devem ser copiados e mantidos em segurança.
+
+Outro elemento do qual também pode ser desejável manter cópias para referências futuras são os registros de eventos (pasta $log$ dentro do portal).
+
+Assim sendo, as definições de conexão com o servidor \textbf{MongoDB}, local dos arquivos disponibilizados pelos editores (definida na linha $10$ do arquivo de configuração $default.js$) e a pasta $log$ do portal devem ser salvas pelas rotinas diárias de ``\textit{Backup}''.
+
+\subsection{Registros de eventos}
+
+Tanto o Portal Institucioanl quanto o Painel Administrativo possuem quatro registros de eventos:
+
+\begin{itemize}
+    \item ``\textit{Log}'' da aplicação - registra eventos gerais que ocorrem com a aplicação
+    \item ``\textit{Log}'' de segurança - registra os eventos de segurança
+    \item ``\textit{Log}'' de requisições - registra todas as requisições feitas ao portal e ao painel
+    \item ``\textit{Log}'' de erros - registra ocorrências de erros (que também pode ser registrados nos ``\textit{logs}'' de aplicação e segurança para facilitar o rastreamento)
+\end{itemize}
+
+A configuração dos registros de eventos é feita programaticamente no ``\textit{Script}'' $helpers/logger.js$, e lá estão definidos os seguintes parâmetros para todos os arquivos:
+
+\begin{itemize}
+    \item Nível de registros ($level$): $'info'$
+    \item Nome e local do arquivo ($filename$): pasta $log$, arquivo:
+        \begin{itemize}
+            \item Tipo do log:
+                \begin{itemize}
+                    \item $app$ - Aplicação
+                    \item $sec$ - Segurança
+                    \item $req$ - Requisições
+                    \item $err$ - Erros
+                \end{itemize}
+            \item Data e hora do registro no formato:
+                \begin{itemize}
+                    \item Ano com quatro dígitos
+                    \item Mês com dois dígitos
+                    \item Dia com dois dígitos
+                    \item Hora com dois dígitos
+                \end{itemize}
+            \item Tipo de arquivo \textbf{JSON}
+        \end{itemize}
+    \item Tamanho máximo: 20MB
+    \item Tempo máximo: 14 dias
+    \item Arquivo compactado ($zippedArchive$) - quando o arquivo atinge o tamanho ou o tempo máximo (o primeiro que ocorrer) será compactado
+    \item Tratamento de exceções - automaticamente grava um registro quando ocorrem exceções \textbf{JavaScript}
+\end{itemize}
+
+O \textbf{CapstoneJS} utiliza apenas os registros de eventos de aplicação e de segurança. Já o portal e o painel utilizam todos os registros\footnote{Ocorrências de erros em qualquer componente de terceiros utilizado pelo portal ou pelo painel, mesmo fazendo parte do conjunto do \textbf{CapstoneJS}, são apresentado no console e o ``\textit{script}'' de inicialização do serviço deve tomar o cuidado de salvar este console apropriadamente de acordo com o que for recomendado pelo sistema operacional em uso.}

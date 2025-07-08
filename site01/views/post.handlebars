@@ -1,0 +1,111 @@
+<div id="page-content" role="main">
+    <div class="container">
+        <div class="container-out">
+            <div class="row">
+                <div class="col-md-9">
+                    <div id="content">
+                        {{#if data.post.title}}
+							<header class="devider-bottom devider-heavy devider-margin-medium">
+								<h1>{{data.post.title}}</h1>
+                                {{#if data.post.subtitle}}
+								    <h3>{{data.post.subtitle}}</h3>
+                                {{/if}}
+                                {{#if data.post.content.brief}}
+								    <div class="excerpt">{{{data.post.content.brief}}}</div>
+                                {{/if}}
+
+                                {{> subPostsIndex }}
+
+							</header>
+							<article class="post post-single post-type-text">
+                                {{#if data.post.showImage}}
+                                    <div class="post-heading">
+                                        <div class="thumbnail">
+                                            {{#if data.post.video}}
+                                                <iframe width="100%" height="100%" src="{{data.post.video}}" frameborder="0" allow="fullscreen"></iframe>
+                                            {{else}}
+                                                {{#if data.post.image}}
+                                                    <div class="slider">
+                                                        <img src="{{data.post.image.src}}">
+                                                    </div>
+                                                {{/if}}
+                                            {{/if}}
+                                        </div>
+                                    </div>
+                                {{/if}}
+								<div class="post-content">
+									{{#compare data.post.state "!=" "archived"}}
+										<div class="content-left">
+											<div class="article-date">
+												<span class="type"></span>
+												<span class="day">{{moment data.post.publishedDate lang="{{language}}" format="D"}}</span>
+												<span class="month">{{moment data.post.publishedDate lang="{{language}}" format="MMM"}}</span>
+												<span class="year">{{moment data.post.publishedDate lang="{{language}}" format="YYYY"}}</span>
+											</div>
+											<ul class="article-details"></ul>
+											<div class="article-share">
+												<h5><i class="fa fa-share"></i>Share</h5>
+												<ul>
+													<li>
+														<a id="twitter-sharing" href="https://twitter.com/intent/tweet?text={{data.post.title}}&hashtags=ita&url=" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+													</li>
+													<li>
+														<a id="facebook-sharing" href="https://www.facebook.com/sharer.php?u=" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									{{/compare}}
+									<div class="content-right">
+										<div class="text">
+
+											{{{data.post.content.extended}}}
+
+										</div>
+									</div>
+									{{#if data.post.link}}
+										<div class="call2action call2action-right call2action-colored">
+											<div class="call2action-heading">
+												<div class="title">
+													<h4>{{translation.moreInformation}}</h4>
+												</div>
+												<div class="text">
+													{{#if data.post.content.brief}}
+														<p>{{{data.post.content.brief}}}</p>
+													{{else}}
+														<p>{{{data.post.title}}}</p>
+													{{/if}}
+												</div>
+											</div>
+											<div class="call2action-content">
+												<a href="{{data.post.link}}" class="btn btn-big" target="_blank">{{translation.readMore}}</a>
+											</div>
+										</div>
+									{{/if}}
+								</div>
+
+								{{> fileList }}
+
+							</article>
+                        {{else}}
+                            {{> error }}
+                        {{/if}}                            
+                    </div>
+                </div>
+                
+                {{#eq data.sidebar "true"}}
+                <div class="col-md-3">
+                    <div class="sidebar" id="sidebar-right">
+
+                        {{> noticias }}
+                        
+                    </div>
+                </div>
+                {{/eq}}
+            </div>
+        </div>
+
+        {{> subPosts }}
+
+    </div>
+</div>

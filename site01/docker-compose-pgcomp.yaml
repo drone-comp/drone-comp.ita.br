@@ -1,0 +1,23 @@
+services:
+  pgcomp:
+    container_name: pgcomp
+    image: pgcomp:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.pgcomp
+    expose:
+      - "3004"
+    networks:
+      - netlab01
+    volumes:
+      - $PWD/config:/pgcomp/site01/config
+      - pgcompdata:/app/assets/static/core/uploads
+
+volumes:
+  pgcompdata:
+    name: pgcompdata
+    external: true
+
+networks:
+  netlab01:
+    external: true

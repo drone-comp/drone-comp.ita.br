@@ -1,0 +1,87 @@
+{{#gt data.acontece.length 0}}
+    <div class="container-out">
+        <div class="title title-section">
+            <h2>{{translation.partials.acontece._title}}</h2>
+            <p><!--Integer vel lectus orci. Nam non purus at odio ultricies malesuada.--></p>
+            <span class="sticker">
+                <i class="icon fa fa-bullhorn"></i>
+            </span>
+        </div>
+        <div data-animate="flipInY">
+            <div class="carousel-wrap">
+                <ul class="carousel-nav">
+                    <li><a href="/" class="btn btn-icon-prev prev"></a></li>
+                    <li><a href="/" class="btn btn-icon-next next"></a></li>
+                </ul>
+                <div class="carousel" data-visible="3">
+                    {{#each data.acontece}}
+                        {{#if this.video}}
+                            <article class="post post-latest post-type-youtube">
+                        {{else}}
+                            <article class="post post-latest post-type-image">
+                        {{/if}}
+                            <div class="post-heading">
+                                <div class="thumbnail">
+                                    {{#if this.video}}
+                                        <iframe width="349" height="206" src="{{this.video}}" frameborder="0" allow="fullscreen"></iframe>
+                                    {{else}}
+                                        {{#if this.route}}
+                                            <a class="link" href="/{{../language}}{{this.route}}">
+                                                <span class="btn btn-icon-link"></span>
+                                                <img src="{{this.image.src}}" alt="{{this.caption}}">
+                                            </a>
+                                        {{else}}
+                                            {{#if this.link}}
+                                                <a class="link" href="{{this.link}}" target="_blank">
+                                                    <span class="btn btn-icon-link"></span>
+                                                    <img src="{{this.image.src}}" alt="{{this.caption}}">
+                                                </a>
+                                            {{else}}
+                                                <a class="link" href="/{{../language}}/post/{{this.slug}}">
+                                                    <span class="btn btn-icon-link"></span>
+                                                    <img src="{{this.image.src}}" alt="{{this.caption}}">
+                                                </a>
+                                            {{/if}}
+                                        {{/if}}
+                                    {{/if}}
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="type"></div>
+                                <div class="title">
+                                    <h2 class="h4">
+                                        {{#if this.route}}
+                                            <a href="/{{../language}}{{this.route}}">{{this.title}}</a>
+                                        {{else}}
+                                            {{#if this.link}}
+                                                <a href="{{this.link}}" target="_blank">{{this.title}}</a>
+                                            {{else}}
+                                                <a href="/{{../language}}/post/{{this.slug}}">{{this.title}}</a>
+                                            {{/if}}
+                                        {{/if}}
+                                    </h2>
+                                    <p class="meta">
+                                        <span class="meta-date">{{moment this.publishedDate lang="{{language}}" format="D-MMMM"}}</span>
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <p>{{{this.content.brief}}}
+                                        {{#if this.route}}
+                                            <a href="/{{../language}}{{this.route}}">{{this.title}}, {{translation.more}}</a>
+                                        {{else}}
+                                            {{#if this.link}}
+                                                <a href="{{this.link}}" target="_blank">{{this.title}}, {{translation.more}}</a>
+                                            {{else}}
+                                                <a href="/{{../language}}/post/{{this.slug}}">{{this.title}}, {{translation.more}}</a>
+                                            {{/if}}
+                                        {{/if}}
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+{{/gt}}

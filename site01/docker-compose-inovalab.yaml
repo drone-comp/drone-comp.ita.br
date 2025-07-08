@@ -1,0 +1,23 @@
+services:
+  inovalab:
+    container_name: inovalab
+    image: inovalab:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.inovalab
+    expose:
+      - "3006"
+    networks:
+      - netlab01
+    volumes:
+      - $PWD/config:/inovalab/site01/config
+      - inovalabdata:/app/assets/static/core/uploads
+
+volumes:
+  inovalabdata:
+    name: inovalabdata
+    external: true
+
+networks:
+  netlab01:
+    external: true

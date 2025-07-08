@@ -1,0 +1,82 @@
+<div id="page-content" role="main">
+  <div class="container">
+    <div class="container-out">
+      <div class="row">
+        <div class="col-md-9">
+          <div id="content">
+            {{#if data.post.title}}
+            <header class="devider-bottom devider-heavy devider-margin-medium">
+              <h1>{{data.post.title}}</h1>
+              <h3>{{data.post.subtitle}}</h3>
+              <div class="excerpt">{{{data.post.content.brief}}}</div>
+            </header>
+              <article class="post post-single post-type-text">
+                <div class="post-heading">
+                  <div class="thumbnail">
+                    {{#if data.post.video}}
+                      <iframe width="100%" height="100%" src="{{data.post.video}}" frameborder="0"></iframe>
+                    {{else}}
+                      {{#if data.post.image}}
+                        <div class="slider">
+                          <img src="{{data.post.image.src}}">
+                        </div>
+                      {{/if}}
+                    {{/if}}
+                  </div>
+                </div>
+                <div class="post-content">
+                  {{#compare data.post.state "!=" "archived"}}
+                    <div class="content-left">
+                      <div class="article-date">
+                        <span class="type"></span>
+                        <span class="day">{{moment data.post.publishedDate lang="{{language}}" format="D"}}</span>
+                        <span class="month">{{moment data.post.publishedDate lang="{{language}}" format="MMM"}}</span>
+                        <span class="year">{{moment data.post.publishedDate lang="{{language}}" format="YYYY"}}</span>
+                      </div>
+                      <ul class="article-details"></ul>
+                    </div>
+                  {{/compare}}
+                  <div class="content-right">
+                    <div class="text">
+                      {{{data.post.content.extended}}}
+                    </div>
+                  </div>
+                  {{#if data.post.link}}
+                    <div class="call2action call2action-right call2action-colored">
+                      <div class="call2action-heading">
+                        <div class="title">
+                          <h4>{{translation.moreInformation}}</h4>
+                        </div>
+                        <div class="text">
+                          {{#if data.post.content.brief}}
+                            <p>{{{data.post.content.brief}}}</p>
+                          {{else}}
+                            <p>{{{data.post.title}}}</p>
+                          {{/if}}
+                        </div>
+                      </div>
+                      <div class="call2action-content">
+                        <a href="{{data.post.link}}" class="btn btn-big" target="_blank">{{translation.readMore}}</a>
+                      </div>
+                    </div>
+                  {{/if}}
+                </div>
+                {{> fileList }}
+              </article>
+                        {{else}}
+                            {{> error }}
+                        {{/if}}                            
+                    </div>
+                </div>
+                {{#eq data.sidebar "true"}}
+                <div class="col-md-3">
+                    <div class="sidebar" id="sidebar-right">
+                        {{> noticias }}
+                    </div>
+                </div>
+                {{/eq}}
+            </div>
+        </div>
+        {{> subPosts }}
+    </div>
+</div>              

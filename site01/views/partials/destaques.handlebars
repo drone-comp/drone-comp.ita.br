@@ -1,0 +1,94 @@
+{{#gt data.destaque.length 0}}
+    <div class="container-out container-image" style="background-image:url(/static/images/sections/foto-aerea-ita.jpg);">
+        <div class="title title-section">
+            <h2>{{translation.partials.destaques._title}}</h2>
+            <p><!-- aqui coloque alguma coisa inteligente, por favor --></p>
+            <span class="sticker">
+                <i class="icon icomoon-quill"></i>
+            </span>
+        </div>
+        <div data-animate="slideInLeft">
+            <div class="carousel-wrap">
+                <ul class="carousel-nav">
+                    <li><a href="#" class="btn btn-icon-prev prev"></a></li>
+                    <li><a href="#" class="btn btn-icon-next next"></a></li>
+                </ul>
+                <div class="projects carousel" data-visible="3">
+                    {{#each data.destaque}}
+                        <article class="project project-default photography">
+                            <div class="project-heading">
+                                <div class="thumbnail">
+                                    {{#if this.route}}
+                                        <a class="link" href="/{{../language}}{{this.route}}">
+                                            <span class="btn btn-icon-link"></span>
+                                            <img src="{{this.image.src}}" alt="{{this.caption}}">
+                                        </a>
+                                    {{else}}
+                                        {{#if this.link}}
+                                            <a class="link" href="{{this.link}}" target="_blank">
+                                                <span class="btn btn-icon-link"></span>
+                                                <img src="{{this.image.src}}" alt="{{this.caption}}">
+                                            </a>
+                                        {{else}}
+                                            <a class="link" href="/{{../language}}/post/{{this.slug}}">
+                                                <span class="btn btn-icon-link"></span>
+                                                <img src="{{this.image.src}}" alt="{{this.caption}}">
+                                            </a>
+                                        {{/if}}
+                                    {{/if}}
+                                </div>
+                                <ul class="project-action">
+                                    <li><a class="lightbox btn btn-icon-view" href="{{this.image.src}}" data-fancybox-title="<h4>{{this.author.displayName}}</h4>
+                                    <p>{{{this.content.brief}}}</p>
+                                    <p class='text-right'>
+                                        {{#if this.route}}
+                                            <a class='btn' href='/{{../language}}{{this.route}}''>{{translation.more}}</a>
+                                        {{else}}
+                                            {{#if this.link}}
+                                                <a class='btn' href='{{this.link}}' target='_blank'>{{translation.more}}</a>
+                                            {{else}}
+                                                <a class='btn' href='/{{../language}}/post/{{this.slug}}'>{{translation.more}}</a>
+                                            {{/if}}
+                                        {{/if}}
+                                    </p>" data-fancybox-group="portfolio"></a></li>
+                                    <li>
+                                        {{#if this.route}}
+                                            <a class="link btn btn-icon-link" href="/{{../language}}{{this.route}}"></a>
+                                        {{else}}
+                                            {{#if this.link}}
+                                                <a class="link btn btn-icon-link" href="{{this.link}}" target="_blank"></a>
+                                            {{else}}
+                                                <a class="link btn btn-icon-link" href="/{{../language}}/post/{{this.slug}}"></a>
+                                            {{/if}}
+                                        {{/if}}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project-content">
+                                <div class="title">
+                                    <h2 class="h5">
+                                        {{#if this.route}}
+                                            <a href="/{{../language}}{{this.route}}">{{this.title}}</a>
+                                        {{else}}
+                                            {{#if this.link}}
+                                                <a href="{{this.link}}" target="_blank">{{this.title}}</a>
+                                            {{else}}
+                                                <a href="/{{../language}}/post/{{this.slug}}">{{this.title}}</a>
+                                            {{/if}}
+                                        {{/if}}
+                                    </h2>
+                                    <p class="meta">
+                                        <!-- <span class="meta-like">58</span> -->
+                                        <span class="meta-date">{{moment this.publishedDate lang="{{language}}" format="D-MMMM"}}</span>
+                                        <!-- <span class="meta-comments">34</span> -->
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    {{/each}}
+                </div>
+                <div class="carousel-pagi"></div>
+            </div>
+        </div>
+    </div>
+{{/gt}}

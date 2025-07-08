@@ -1,0 +1,47 @@
+<div id="page-content" role="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<div id="content">
+					<header class="devider-bottom devider-heavy devider-margin-medium">
+						<h1>{{translation.iex.local._title}}: {{filters.local}}</h1>
+						<!-- <div class="excerpt">{{{data.post.content.brief}}}</div> -->
+					</header>
+                    <section class="posts">
+						{{#each data.coop}}
+							<article class="post post-thumb post-type-gallery devider-top devider-margin-medium">
+								<div class="post-heading">
+									<div class="thumbnail">
+										<a class="link" href="{{this.link}}" target="_blank">
+											<span class="btn btn-icon-link"></span>
+											<img src="{{this.image.src}}" alt="{{this.title}}">
+										</a>
+									</div>
+								</div>
+								<div class="post-content">
+									<!-- <div class="type"></div> -->
+									<div class="title">
+										<h2 class="h4"><a href="{{this.link}}" target="_blank">{{this.title}}</a></h2>
+										<p class="meta">
+											<span>{{../translation.iex.local.contact}}: <a href="mailto:{{this.contact.email}}">{{this.contact.name}}</a></span>
+										</p>
+									</div>
+									<div class="text">
+										<p>{{{this.content.brief}}}</p>
+									</div>
+								</div>
+							</article>
+						{{/each}}
+					</section>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="sidebar" id="sidebar-right">
+
+					{{> noticias}}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+services:
+  portal:
+    container_name: portal
+    image: portal:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.ita
+    expose:
+      - "3001"
+    networks:
+      - netlab01
+    volumes:
+      - $PWD/config:/portal/site01/config
+      - portaldata:/app/assets/static/core/uploads
+
+volumes:
+  portaldata:
+    name: portaldata
+    external: true
+
+networks:
+  netlab01:
+    external: true

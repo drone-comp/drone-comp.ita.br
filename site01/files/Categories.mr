@@ -1,0 +1,61 @@
+// Welcome to MongoDB Runner editor, please keep 'db' instance. 
+// All methods which are compitable with MongoDB NodeJS driver can be used in this editor.
+// (http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html)
+db.collection('categories').find()
+
+// db.collection('categories').update(
+//     { _id: { $ne: null } }, 
+//     [
+//         { $set: { description: {pt:"$description",en:"$description"} } }
+//     ], 
+//     { multi: true }
+// )
+
+// db.collection('categories').update(
+//     { _id: { $ne: null } }, 
+//     [
+//         { $set: { name: {pt:"$name",en:"$name"} } }
+//     ], 
+//     { multi: true }
+// )
+
+// db.categories.update( 
+//     { key: 'laboratorios' }, 
+//     [ 
+//         { $set: { name: { en: "Laboratories" } } } 
+//     ] 
+// )
+
+// db.categories.dropIndex("key_1")
+
+// db.categories.update({ _id: { $ne: null } }, { $unset: { key: '' } }, { multi: true })
+
+// db.categories.update({ "name.pt" : "Notícia" }, [ { $set: { "name.en": "News" } }, { $set: { "slug": "noticias" } } ])
+
+// db.categories.update({ "name.pt" : "Laboratórios" }, [ { $set: { "name.en": "Laboratories" } }, { $set: { "slug": "laboratorios" } } ])
+
+// db.categories.update({ "name.pt" : "Pós-graduação" }, [ { $set: { "name.en": "Post-graduation" } }, { $set: { "slug": "pos-graduacao" } } ])
+
+// db.categories.update({ "name.pt" : "Parcerias" }, [ { $set: { "name.en": "Partnerships" } }, { $set: { "slug": "parcerias" } } ])
+
+// db.categories.update({ "name.pt" : "Regulamento e Regimento" }, [ { $set: { "name.en": "Regulation and Regiment" } }, { $set: { "slug": "regulamento-e-regimento" } } ])
+
+// db.categories.update({ "name.pt" : "Cursos de Graduação" }, [ { $set: { "name.en": "Undergraduate Courses" } }, { $set: { "slug": "cursos-de-graduacao" } } ])
+
+// db.categories.update({ "name.pt" : "Cursos de Pós-Graduação" }, [ { $set: { "name.en": "Post-graduation Courses" } }, { $set: { "slug": "cursos-de-pos-graduacao" } } ])
+
+// db.categories.update({ "name.pt" : "Normas e portarias" }, [ { $set: { "name.en": "Norms and Ordinances" } }, { $set: { "slug": "normas-e-portarias" } } ])
+
+// db.categories.update({ "name.pt" : "PDI" }, [ { $set: { "name.en": "Institutional Development Plan" } }, { $set: { "slug": "pdi" } } ])
+
+// db.categories.update({ "name.pt" : "Congregação" }, [ { $set: { "name.en": "Assembly" } }, { $set: { "slug": "congregacao" } } ])
+
+// db.categories.update({ "name.pt" : "Atas das Reuniões" }, [ { $set: { "name.en": "Minutes of Meetings" } }, { $set: { "slug": "atas-das-reunioes" } } ])
+
+// db.categories.update({ "name.pt" : "Graduação" }, [ { $set: { "name.en": "Graduation" } }, { $set: { "slug": "graduacao" } } ])
+
+// db.categories.update({ "name.pt" : "Solicitação de Documentos" }, [ { $set: { "name.en": "Request for Documents" } }, { $set: { "slug": "solicitacao-de-documentos" } } ])
+
+// db.categories.update({ "name.pt" : "Catálogos dos Cursos de Graduação" }, [ { $set: { "name.en": "Undergraduate Catalogs" } }, { $set: { "slug": "catalogo-dos-cursos-de-graduacao" } } ])
+
+// db.categories.update({ "name.pt" : "Catálogos dos Cursos de Pós-Graduação" }, [ { $set: { "name.en": "Post-graduate Catalogs" } }, { $set: { "slug": "catalogos-dos-cursos-de-pos-graducacao" } } ])

@@ -1,0 +1,50 @@
+{{#if data.child}}
+    <div class="container-out container-light">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="content">
+                    {{#each data.child}}
+                        <div id="content">
+                            <header class="devider-bottom devider-heavy devider-margin-medium">
+                                <h3>{{this.title}}</h1>
+                                <div class="excerpt">{{{this.content.brief}}}</div>
+                            </header>
+                            <article class="post post-single post-type-text">
+                                <div class="post-heading">
+                                    <div class="thumbnail">
+                                        {{#if this.video}}
+                                            <iframe width="100%" height="100%" src="{{this.video}}" frameborder="0"></iframe>
+                                        {{else if this.image}}
+                                            <div class="slider">
+                                                <img src="{{this.image.src}}">
+                                            </div>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    <div class="content-left">
+                                        <div class="article-date">
+                                            <span class="type"></span>
+                                            <span class="day">{{moment this.publishedDate lang="{{../language}}" format="D"}}</span>
+                                            <span class="month">{{moment this.publishedDate lang="{{../language}}" format="MMM"}}</span>
+                                            <span class="year">{{moment this.publishedDate lang="{{../language}}" format="YYYY"}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="content-right">
+                                        <div class="text">
+                                        </div>
+                                    </div>
+                                    <div class="content-right">
+                                        <div class="text">
+                                            {{{this.content.extended}}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}

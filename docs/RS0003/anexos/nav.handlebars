@@ -1,0 +1,42 @@
+<div class="navbar megamenu-width">
+    <div class="container">
+        <aside id="main-search">
+            <form action="/{{language}}/search" method="GET">
+                <a href="/{{language}}" class="close"><i class="icomoon-close"></i></a>
+                <div class="form-field">
+                    <div class="placeholder">
+                        <label for="query">{{translation.siteSearch}}</label>
+                        <input class="form-control" type="text" maxlength="100" name="query" id="query" />
+                    </div>
+                </div>
+            </form>
+        </aside>
+        <div class="navbar-inner">
+            <a href="/{{language}}" class="logo">
+                <img src="/static/images/logo-ita.png" alt="ITA">
+            </a>
+            <ul id="mobile-menu">
+                <li>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-reorder"></i>
+                    </button>
+                </li>
+                <li><a class="btn-search" href="/{{language}}"><i class="fa fa-search"></i></a></li>
+            </ul>
+            <ul id="main-menu" class="collapse navbar-collapse nav slide">
+                {{#if config.portal.ita}}
+                    {{> navITA }}
+                {{/if}}
+
+                {{> navigator }}
+
+                {{#if config.portal.contato}}
+                    {{> navContato }}
+                {{/if}}
+                <li class="search-nav">
+                    <a href="/{{language}}/search" class="btn-search"><i class="fa fa-search"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

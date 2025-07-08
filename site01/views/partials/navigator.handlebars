@@ -1,0 +1,74 @@
+{{#each data.menu}}
+    <li>
+        {{#if this.route}}
+            <a href="/{{../language}}{{this.route}}">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+        {{else}}
+            {{#if this.link}}
+                <a href="{{this.link}}" target="_blank">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+            {{else}}
+                {{#if this.post}}
+                    <a href="/{{../language}}/post/{{this.post.slug}}">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                {{else}}
+                    <a href="#">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                {{/if}}
+            {{/if}}
+        {{/if}}
+        {{#gt this.items.length 0}}<ul class="dropdown">{{/gt}}
+            {{#each this.items}}
+                <li>
+                    {{#if this.route}}
+                        <a href="/{{../../language}}{{this.route}}">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                    {{else}}
+                        {{#if this.link}}
+                            <a href="{{this.link}}" target="_blank">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                        {{else}}
+                            {{#if this.post}}
+                                <a href="/{{../../language}}/post/{{this.post.slug}}">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                            {{else}}
+                                <a href="#">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                            {{/if}}
+                        {{/if}}
+                    {{/if}}
+                    {{#gt this.items.length 0}}<ul class="dropdown">{{/gt}}
+                        {{#each this.items}}
+                            <li>
+                                {{#if this.route}}
+                                    <a href="/{{../../../language}}{{this.route}}">{{this.label}}<span>{{this.caption}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}</span></a>
+                                {{else}}
+                                    {{#if this.link}}
+                                        <a href="{{this.link}}" target="_blank">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                                    {{else}}
+                                        {{#if this.post}}
+                                            <a href="/{{../../../language}}/post/{{this.post.slug}}">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                                        {{else}}
+                                            <a href="#">{{this.label}}<span>{{this.caption}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}</span></a>
+                                        {{/if}}
+                                    {{/if}}
+                                {{/if}}
+                                {{#gt this.items.length 0}}<ul class="dropdown">{{/gt}}
+                                    {{#each this.items}}
+                                        <li>
+                                            {{#if this.route}}
+                                                <a href="/{{../../../../language}}{{this.route}}">{{this.label}}<span>{{this.caption}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}</span></a>
+                                            {{else}}
+                                                {{#if this.link}}
+                                                    <a href="{{this.link}}" target="_blank">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                                                {{else}}
+                                                    {{#if this.post}}
+                                                        <a href="/{{../../../../language}}/post/{{this.post.slug}}">{{this.label}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}<span>{{this.caption}}</span></a>
+                                                    {{else}}
+                                                        <a href="#">{{this.label}}<span>{{this.caption}}{{#gt this.items.length 0}}<i class="carret"></i>{{/gt}}</span></a>
+                                                    {{/if}}
+                                                {{/if}}
+                                            {{/if}}
+                                        </li>
+                                    {{/each}}
+                                {{#gt this.items.length 0}}</ul>{{/gt}}
+                            </li>
+                        {{/each}}
+                    {{#gt this.items.length 0}}</ul>{{/gt}}
+                </li>
+            {{/each}}
+        {{#gt this.items.length 0}}</ul>{{/gt}}
+    </li>
+{{/each}}

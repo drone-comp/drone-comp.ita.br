@@ -1,0 +1,19 @@
+Solução 01:
+no <armazenamento de conteúdo dinâmico do Portal>
+face <a questão de se utilizar dados não estruturados>
+decidimos <utilizar um banco de dados NoSQL de código livre>
+e negligenciamos <bancos de dados relacionais ou híbridos>
+para atingir <fatores prós: 
+    1) facilidade de permitir aos operadores do Portal a inclusão, exclusão e modificação da estrutura de dados,
+    2) facilidade em criar interfaces ou utilizar interfaces prontas para permitir a inclusão, exclusão e modificação de registros no banco de dados,
+    3) não ter de utilizar estruturas complexas de metadados, ou até mesmo criar uma estrutura de metadados para atingir os objetivos acima delineados
+>
+aceitando <fatores contras:
+    1) o fato de que bancos de dados NoSQL são não determinísticos (negligenciável se levarmos em consideração que a base de dados não irá chegar a ter centenas de milhares de registros)
+    2) bancos de dados NoSQL não são transacionais (negligenciável pois o Portal, por um lado, será uma aplicação de muita leitura e pouca gravação, e por outro lado a possibilidade de haver disputa de dois usuários tentando atualizar o mesmo registro é negligenciável)
+>
+porque <
+    1) bancos de dados NoSQL são infinitamente mais simples de operar do que os bancos relacionais equivalentes
+    2) bancos de dados NoSQL são infinitamente mais flexíveis e tolerantes a modificações na estrutura da dados (na verdade, bancos de dados NoSQL não possuem estrutura de dados pré-definidas)
+    3) a maioria das soluções NoSQL se encaixam muito bem em arquiteturas de aplicações para internet como é a do Portal
+>

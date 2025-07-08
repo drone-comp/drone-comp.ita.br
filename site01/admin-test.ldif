@@ -1,0 +1,12 @@
+dn: uid=ADMIN-DO-PORTAL@local.io,cn=ADMIN-DO-PORTAL,ou=internal,ou=users,dc=ita,dc=br
+uid: ADMIN-DO-PORTAL@local.io
+userPassword: SENHA-DO-ADMIN-DO-PORTAL-NO-LDAP
+objectClass: account
+objectClass: simpleSecurityObject
+objectClass: top
+
+dn: cn=admin,dc=portal,dc=ita,dc=br
+cn: admin
+member: uid=ADMIN-DO-PORTAL@local.io
+objectClass: brPerson
+objectClass: top

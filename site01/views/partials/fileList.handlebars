@@ -1,0 +1,32 @@
+{{#if data.list}}
+    <div class="text">
+        <div class="accordion accordion-colored">
+            <div>
+                <div class="accordion-heading">
+                    <h5><a href="#"><i class="fa fa-chevron-right"></i>{{translation.partials.fileList._title}}</a></h5>
+                </div>
+                <div class="accordion-content">
+                    <section class="posts">
+                        {{#each data.list}}
+                            <article class="post post-type-gallery devider-top devider-margin-medium">
+                                <div class="post-content">
+                                    <div class="type"></div>
+                                    <div class="title">
+                                        <h2 class="h4"><a href="/post/download/{{this._id}}">{{this.caption}}</a></h2>
+                                        <p class="meta">
+                                            <span>{{../translation.partials.fileList.postedBy}} <a href="/{{../language}}/user/{{this.createdBy.displayName}}">{{this.createdBy.displayName}}</a></span>
+                                            <span>{{../translation.partials.fileList.in}}&nbsp;{{moment this.createdAt lang="{{../language}}" format="D-MMMM"}}</span>
+                                        </p>
+                                    </div>
+                                    <div class="text">
+                                        <p>{{{this.description}}}<br/><a href="/{{../language}}/post/download/{{this._id}}">{{../translation.partials.fileList.download}}</a></p>
+                                    </div>
+                                </div>
+                            </article>
+                        {{/each}}
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}

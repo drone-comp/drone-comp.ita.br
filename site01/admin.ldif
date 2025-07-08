@@ -1,0 +1,12 @@
+dn: uid=admin@local.io,dc=portal,dc=ita,dc=br
+uid: admin@local.io
+userPassword: p-a-s-s-w-o-r-d
+objectClass: account
+objectClass: simpleSecurityObject
+objectClass: top
+
+dn: cn=admin,dc=portal,dc=ita,dc=br
+cn: admin
+member: uid=admin@local.io
+objectClass: groupOfNames
+objectClass: top

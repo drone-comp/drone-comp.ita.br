@@ -1,0 +1,35 @@
+{{#gt data.testimonials.length 0}}
+    <div class="container-out container-image" style="background-image:url(/static/images/sections/testimonial.jpg)">
+        <div class="title title-section">
+            <h2>{{translation.partials.testimonials._title}}</h2>
+            <!--<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>-->
+            <span class="sticker">
+                <i class="icon fa fa-thumbs-o-up"></i>
+            </span>
+        </div>
+        <div data-animate="bounceIn">
+            <div class="testimonial-wrap">
+                <div class="testimonial-outer">
+                    <ul class="testimonial" data-auto="true">
+                        {{#each data.testimonials}}
+                        <li>
+                            <div class="testimonial-content">
+                                <div class="text">
+                                    <p>"{{this.text}}".</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-heading">
+                                <div class="title">
+                                    <h4>{{this.name}}</h4>
+                                    <p class="position">{{this.position}}</p>
+                                </div>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="testimonial-pagi"></div>
+            </div>
+        </div>
+    </div>
+{{/gt}}

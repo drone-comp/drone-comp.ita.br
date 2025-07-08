@@ -1,0 +1,67 @@
+% This is an unholy mashup of the numeric.bbx and alphabetic.bbx files from
+% the standard biblatex distribution, made so we can switch between numeric
+% style for the main body and alphabetic style for the appendix.
+\ProvidesFile{alphanumeric-hybrid.bbx}
+[\abx@bbxid]
+
+\RequireBibliographyStyle{standard}
+\ExecuteBibliographyOptions{labelalpha,labelnumber,sorting=anyt}
+
+% To use the alphabetic section in one refsection, \setbool{bbx:alpha}{true} at the start;
+% to switch back, \setbool{bbx:alpha}{false}.
+\providebool{bbx:alpha}
+
+\DeclareNameAlias{author}{default}
+\DeclareNameAlias{editor}{default}
+\DeclareNameAlias{translator}{default}
+
+\DeclareFieldFormat{labelalphawidth}{\mkbibbrackets{#1}}
+\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+\DeclareFieldFormat{shorthandwidth}{\mkbibbrackets{#1}}
+
+\defbibenvironment{bibliography}
+  {\list
+     {\ifbool{bbx:alpha}{%
+        \printtext[labelalphawidth]{%
+          \printfield{prefixnumber}%
+          \printfield{labelalpha}%
+          \printfield{extraalpha}%
+        }%
+     }{%
+        \printtext[labelnumberwidth]{%
+          \printfield{prefixnumber}%
+          \printfield{labelnumber}%
+        }%
+     }}
+     {\setlength{\labelwidth}{\ifbool{bbx:alpha}{\labelalphawidth}{\labelnumberwidth}}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}%
+      \ifbool{bbx:alpha}{%
+        \renewcommand*{\makelabel}[1]{##1\hss}%
+      }{%
+        \renewcommand*{\makelabel}[1]{\hss##1}%
+      }}
+  {\endlist}
+  {\item}
+
+\defbibenvironment{shorthands}
+  {\list
+     {\printfield[shorthandwidth]{shorthand}}
+     {\setlength{\labelwidth}{\shorthandwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}%
+      \ifbool{bbx:alpha}{%
+        \renewcommand*{\makelabel}[1]{##1\hss}%
+      }{%
+        \renewcommand*{\makelabel}[1]{\hss##1}%
+      }}}
+  {\endlist}
+  {\item}
+
+\endinput

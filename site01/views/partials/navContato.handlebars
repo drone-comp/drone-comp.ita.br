@@ -1,0 +1,82 @@
+<li class="megamenu"><a href="/{{language}}/#">{{translation.partials.navContato._menu}}<i class="carret"></i></a>
+    <ul class="dropdown megamenu-category">
+        <li>
+            <div class="row">
+                <div class="col-md-3">
+                    <nav class="category-nav">
+                        <ul>
+                            <li class="current text-right"><a href="#">{{translation.partials.navContato.talkToUs}}</a></li>
+                            <li class="text-right"><a href="#">{{translation.partials.navContato.publicRelations}}</a></li>
+                            <li class="text-right"><a href="#">{{translation.partials.navContato.phoneList}}</a></li>
+                            <li class="text-right"><a href="{{config.portal.contato.webmail}}" target="_blank">{{translation.partials.navContato.webmail}}</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div class="category-content">
+                        <div class="current">
+                            <div class="title">
+                                <h4>{{translation.partials.navContato._title}}</h4>
+                            </div>
+                            {{!-- <div class="text">
+                                <p><i>{{translation.partials.navContato._subtitle}}</i></p>
+                            </div>
+                            <hr /> --}}
+                            <div class="row">
+                                <div class="col">
+                                    {{> contact }}
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="title">
+                                <h4>{{translation.partials.navContato.publicRelations}}</h4>
+                            </div>
+                            <div class="text">
+                                <p><i>{{translation.partials.navContato._subtitle}}</i></p>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    {{!-- <div class="title">
+                                        <h5><a href="/{{language}}/#"><i class="icomoon-feed"></i> {{translation.partials.navContato.venues}}</a></h5>
+                                    </div>
+                                    <div class="title">
+                                        <h5><a href="/{{language}}/#"><i class="icomoon-home"></i> {{translation.partials.navContato.visitation}}</a></h5>
+                                    </div>
+                                    <div class="title">
+                                        <h5><a href="/{{language}}/#"><i class="icomoon-newspaper"></i> {{translation.partials.navContato.press}}</a></h5>
+                                    </div> --}}
+                                    <div class="title">
+                                        <h5><a href="{{config.portal.contato.contatos.comunicacao}}"><i class="icomoon-mail"></i> {{translation.partials.navContato.contact}} {{{config.portal.contato.contatos.nome}}}</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{> ramais }}
+                        
+                        {{#if config.portal.contato.webmail}}
+                            <div>
+                                <div class="title">
+                                    <h4>{{translation.partials.navContato.webmail}}</h4>
+                                </div>
+                                <div class="text">
+                                    <p><i>{{translation.partials.navContato._subtitle}}</i></p>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="title">
+                                            <h5><a href="{{config.portal.contato.webmail}}" target="_blank"><i class="icomoon-mail"></i> {{translation.partials.navContato.webmail}}</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</li>

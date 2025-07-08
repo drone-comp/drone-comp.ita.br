@@ -1,0 +1,24 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{orcid}[2020/10/14 Orcid LaTeX package]
+
+\RequirePackage{tikz,xcolor,hyperref}
+
+\definecolor{lime}{HTML}{A6CE39}
+\DeclareRobustCommand{\orcid}{
+	\begin{tikzpicture}
+	\draw[lime, fill=lime] (0,0) 
+	circle [radius=0.16] 
+	node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+	\draw[white, fill=white] (-0.0625,0.095) 
+	circle [radius=0.007];
+	\end{tikzpicture}
+	\hspace{-2mm}
+}
+
+\newcommand{\orcidId}[2]{
+    \href{https://orcid.org/#2}{#1{\orcid}orcid.org/#2}
+}
+
+\newcommand{\orcidIcon}[1]{
+    \href{https://orcid.org/#1}{\orcid}
+}

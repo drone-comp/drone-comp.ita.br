@@ -1,0 +1,62 @@
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover,
+a,
+.dropcap.clean {
+	color: #007aff;
+}
+.highlight {
+	background-color: #007aff;
+}
+
+.dropcap.clean {
+	color: #007aff;
+}
+
+blockquote:before,
+blockquote .author {
+	color: #007aff;
+}
+
+.arrow li:before, .circle li:before, .check li:before,
+.plus li:before, .dash li:before {
+	color: #007aff;
+}
+
+/*                                * * *                                   */
+
+.testimonial-wrap.testimonial-colored .testimonial-inner {
+	border-color: #007aff;
+	background-color: #3395ff;
+}
+.testimonial-wrap.testimonial-colored .testimonial-outer:before {
+	border-top-color: #007aff;
+}
+.testimonial-wrap.testimonial-colored .testimonial-outer:after {
+    border-top-color:  #3395ff;
+}
+
+.tab.tab-colored .tab-heading {
+	border-color: #007aff;
+	background-color: #3395ff;
+}
+.tab.tab-colored .tab-heading li {
+    border-color: #007aff;
+}
+.tab.tab-colored .tab-heading li:hover a,
+.tab.tab-colored .tab-heading li.current a {
+    background-color: #007aff;
+}
+
+.accordion > div.active .accordion-heading a,
+.accordion > div .accordion-heading a:hover {
+	color: #007aff;
+}
+
+.accordion.accordion-colored .accordion-heading {
+	border-color: #007aff;
+	background-color: #3395ff;
+}
+.accordion.accordion-colored .active .accordion-heading a,
+.accordion.accordion-colored .accordion-heading a:hover {
+	background-color: #007aff;
+}

@@ -1,0 +1,28 @@
+{{#gt data.initiatives.length 0}}
+    <div class="container-out container-light">
+        <div class="title title-section">
+            <h2>{{translation.partials.initiatives._title}}</h2>
+            <p><!-- Ut pellentesque augue dui.--></p>
+            <span class="sticker">
+                <i class="icon icomoon-earth"></i>
+            </span>
+        </div>
+        <div data-animate="slideInRight">
+            <div class="carousel-wrap">
+                <ul class="carousel-nav">
+                    <li><a href="#" class="btn btn-icon-prev prev"></a></li>
+                    <li><a href="#" class="btn btn-icon-next next"></a></li>
+                </ul>
+                <div class="clients carousel" data-visible="4">              
+                    {{#each data.initiatives}}
+                        <div class="client">
+                            <a class="link" href="{{this.link}}" target="_blank">
+                                <img src="{{this.logo.src}}" alt="{{this.caption}}">
+                            </a>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+{{/gt}}

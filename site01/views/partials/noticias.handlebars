@@ -1,0 +1,71 @@
+<div class="widget devider-top devider-heavy devider-margin-medium">
+    <div class="widget-heading">
+        <div class="title title-main">
+            <h5>{{translation.partials.noticias._title}}</h5>
+        </div>
+    </div>
+    <div class="widget-content">
+        <div class="tab full-width" data-animation="slide">
+            <ul class="tab-heading">
+                <li>
+                    <h5><a href="#">{{translation.partials.noticias.news}}</a></h5>
+                </li>
+                <li>
+                    <h5><a href="#">{{translation.partials.noticias.recent}}</a></h5>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div>
+                    <section class="posts">
+
+                        {{#each data.destaque}}
+                            <article class="post post-mini post-type-gallery devider-top devider-margin-medium">
+                                <div class="post-heading">
+                                    <div class="thumbnail">
+                                        <a class="link" href="/{{../language}}/post/{{this.slug}}">
+                                            <span class="btn btn-icon-link"></span>
+                                            <img src="{{this.image.src}}" alt="{{this.title}}">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    <div class="title">
+                                        <h2 class="h6"><a href="/{{../language}}/post/{{this.slug}}">{{this.title}}</a></h2>
+                                    </div>
+                                </div>
+                            </article>
+                        {{/each}}
+
+                    </section>
+                </div>
+                <div>
+                    <section class="posts">
+
+                        {{#each data.acontece}}
+                            <article class="post post-mini post-type-video devider-top devider-margin-medium">
+                                <div class="post-heading">
+                                    <div class="thumbnail">
+                                        <a class="link" href="/{{../language}}/post/{{this.slug}}">
+                                            <span class="btn btn-icon-link"></span>
+                                            {{#if this.video}}
+                                                <iframe width="78" height="42" src="{{this.video}}" frameborder="0" allow="fullscreen"></iframe>
+                                            {{else}}
+                                                <img src="{{this.image.src}}" alt="{{this.title}}">
+                                            {{/if}}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    <div class="title">
+                                        <h2 class="h6"><a href="/{{../language}}/post/{{this.slug}}">{{this.title}}</a></h2>
+                                    </div>
+                                </div>
+                            </article>
+                        {{/each}}
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{{#if data.child}}
+    <div class="container-out container-light">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="content">
+                    <ul class="arrow">
+                        {{#each data.child}}
+                            <li><a href="#{{this.slug}}">{{this.title}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}

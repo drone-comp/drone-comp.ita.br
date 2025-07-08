@@ -1,0 +1,57 @@
+<div class="row row-inline">
+    <div class="col-sm-8">
+        <h1>OOPS!</h1>
+        {{#if message}}
+            <h2>{{ message }}</h2>
+        {{else}}
+            {{#if error }}
+                <h2>{{ error.message }}</h2>
+            {{else}}
+                <h2>{{translation.error.pageNotFound}}</h2>
+            {{/if}}
+        {{/if}}
+        <h4>{{ error }}</h4>
+    </div>
+    <div class="col-sm-4">
+        <div class="widget">
+            <div class="widget-heading">
+                <div class="title title-main">
+                    <h5>{{translation.error.needHelp}}</h5>
+                </div>
+            </div>
+            <div class="widget-content">
+                <div class="text">
+                    <p>{{translation.error.help}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="widget devider-top devider-heavy devider-margin-medium">
+            <div class="widget-content">
+                <form action="/{{language}}/search" method="GET">
+                    <button type="submit" class="btn btn-big btn-icon-search"></button>
+                    <div class="form-field">
+                        <div class="placeholder">
+                            <label for="side-query">{{translation.siteSearch}}</label>
+                            <input class="form-control" type="text" maxlength="100" name="query" id="side-query">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="widget devider-top devider-heavy devider-margin-medium">
+            <div class="widget-heading">
+                <div class="title title-main">
+                    <h5>{{translation.error.links}}</h5>
+                </div>
+            </div>
+            <div class="widget-content">
+                <nav>
+                    <ul>
+                        <li><a href="/{{language}}">{{translation.root}}</a></li>
+                        <li><a href="mailto:contato@ita.br">{{translation.error.talk}}</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

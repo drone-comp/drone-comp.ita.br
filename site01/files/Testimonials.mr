@@ -1,0 +1,12 @@
+// Welcome to MongoDB Runner editor, please keep 'db' instance. 
+// All methods which are compitable with MongoDB NodeJS driver can be used in this editor.
+// (http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html)
+db.collection('testimonials').find()
+
+// db.collection('testimonials').update(
+//     { _id: { $ne: null } }, 
+//     [
+//         { $set: { text: {pt:"$text",en:"$text"} } }
+//     ], 
+//     { multi: true }
+// )

@@ -1,0 +1,32 @@
+<div class="grid-wrap">
+    <section class="posts grid" data-columns="3">
+        {{#each data.list}}
+            <article class="post post-grid {{#if this.image.src}}post-type-image{{else}}post-type-text{{/if}}">
+                <div class="post-heading">
+                    {{#if this.image.src}}
+                        <div class="thumbnail">
+                            <a class="link" href="/post/{{this.slug}}">
+                                <span class="btn btn-icon-link"></span>
+                                <img src="{{this.image.src}}" alt="{{this.title}}">
+                            </a>
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="post-content">
+                    <div class="type"></div>
+                    <div class="title">
+                        <h2 class="h4"><a href="/{{../language}}/post/{{this.slug}}">{{this.title}}</a></h2>
+                        {{#compare this.state "!=" "archived"}}
+                            <p class="meta">
+                                <span class="meta-date">{{moment this.publishedDate lang="pt-BR" format="D-MMM"}}</span>
+                            </p>
+                        {{/compare}}
+                    </div>
+                    <div class="text">
+                        <p>{{{this.content.brief}}}<a href="/{{../language}}/post/{{this.slug}}">{{../translation.readMore}}</a></p>
+                    </div>
+                </div>
+            </article>
+        {{/each}}
+    </section>
+</div>

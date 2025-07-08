@@ -1,0 +1,48 @@
+\section{Arquitetura}\label{RS0000:arquitetura}
+
+\subsection{Decisões Arquiteturais}
+
+Todas as necessidades para implementação do Portal e o Painel Administrativo passaram por um processo decisório onde aplicou-se o recurso de registrar um cartão chamado de Registro de Decisão Arquitetural\cite{kopp2018markdown}.
+
+O formato adotado foi o seguinte:
+
+\begin{code}
+    \inputminted[label=rda]{text}{../RS0000/anexos/exemplo.rda}
+    \caption{Exemplo de Registro de Decisão Arquitetural}\label{RS0000:code:exemplo-rda}
+\end{code}
+
+\subsubsection{Armazenamento de Dados}
+
+\begin{code}
+    \inputminted[label=Armazenamento de Dados]{text}{../RS0000/anexos/db.rda}
+    \caption{RDA Banco de Dados}\label{RS0000:code:db-rda}
+\end{code}
+
+Com base nos critérios acima escolhemos o gerenciador de banco de dados \textit{NoSQL} \textbf{MongoDB} que com base em nossa experiência anterior atende a todos listados.
+
+\subsubsection{Gerenciamento de Conteúdo}
+
+\begin{code}
+    \inputminted[label=Gerenciamento de Conteúdo]{text}{../RS0000/anexos/framework.rda}
+    \caption{RDA Framework CMS}\label{RS0000:code:framework-rda}
+\end{code}
+
+Com base nos critérios acima foram considerados dois \textit{frameworks}:
+
+\begin{enumerate}
+    \item Wagtail - Linguagem \textbf{Python} - completude e complexidade alta
+    \item KapstoneJS - Linguagem \textbf{JavaScript} - completude baixa e complexidade baixa
+\end{enumerate}
+
+Escolhemos o \textit{framework} \textbf{KeystoneJS}, que algum tempo depois de iniciado o projeto evoluiu para uma nova versão incompatível com a que estávamos utilizando e sem o provisionamento de um plano de migração. Como um dos critérios foi justamente o de que o \textit{framework} escolhido deveria ser escrito numa linguagem reconhecida pelo mercado e de código aberto e com o investimento em tempo e aprendizado já feito na ferramenta, decimos pela \textit{derivação} do projeto original e assim nasceu o \textbf{CapstoneJS}.
+
+Seguindo a filosofia proposta, todas as funcionalides pedidas pelos usuários da instituição foram implementadas utilizando recursos do projeto original, e para atendê-las foram criados sub-projetos, alguns derivados de projetos originais voltados ao \textbf{KeystoneJS}, outros adaptados para funcionarem tanto neste quanto em nossa derivação, e que listamos:
+
+\begin{enumerate}
+    \item CapstoneJS - Gerenciador de Conteúdo
+    \item capstone-file-manager - Gerenciador de arquivos dos usuários
+    \item capstone-tinymce - Integração do editor de textos TinyMCE ao CapstoneJS
+    \item capstone-intl - Suporte multi-linguagem
+    \item capstone-accesscontrol - Controle de acesso à modificação de conteúdo por meio de regras
+    \item capstone-auth - Authenticação com serviço LDAP ou Active Directory
+\end{enumerate}

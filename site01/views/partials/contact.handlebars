@@ -1,0 +1,106 @@
+<div class="container-out">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="form-inner">
+                <form action="{{config.portal.contato.email}}" id="contact-form" method="POST" class="form-validate">
+                    <div class="title">
+                        <h2 class="h3">{{translation.partials.contact._title}}</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-field">
+                                <label for="name">{{translation.partials.contact.name}}<span class="require">(*)</span></label>
+                                <input class="form-control" type="text" maxlength="100" name="name" id="name" minlength="2" required />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-field">
+                                <label for="email">{{translation.partials.contact.email}}<span class="require">(*)</span></label>
+                                <input class="form-control" type="email" name="email" id="email" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">{{translation.partials.contact.message}}<span class="require">(*)</span></label>
+                        <textarea class="form-control" maxlength="3000" rows="6" name="message" id="message" required></textarea>
+                        <label for="required"><span class="require">(*) {{translation.partials.contact.required}}</span></label>
+                    </div>
+                    <div class="form-field text-right">
+                        <input type="submit" value="{{translation.partials.contact.send}}" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <!-- <div class="title">
+                <h2 class="h3">Entre em contato</h2>
+            </div> -->
+            <div class="text">
+                <p><!-- Lorem Ipsum is simply dummy text of the printing.--></p>
+            </div>
+            <div class="title">
+                <h4>{{translation.partials.contact.secretary}}</h4>
+            </div>
+            <address>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <b>{{translation.partials.contact.address}}</b>
+                    </div>
+                    <div class="col-sm-8">
+                        Praça Marechal Eduardo Gomes, 50<br />
+                        Vila das Acácias, 12228-900<br />
+                        São José dos Campos/SP - Brasil
+                    </div>
+                </div>
+                {{!-- <div class="row">
+                    <div class="col-sm-4">
+                        <b>{{translation.partials.contact.phone}}</b>
+                    </div>
+                    <div class="col-sm-8">
+                        1800-2233-4455
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <b>{{translation.partials.contact.fax}}</b>
+                    </div>
+                    <div class="col-sm-8">
+                        1800-2233-4455
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <b>{{translation.partials.contact.email}}</b>
+                    </div>
+                    <div class="col-sm-8">
+                        <a href="{{config.portal.contato.contatos.mail}}">contato@ita.br</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <b>{{translation.partials.contact.admission}}</b>
+                    </div>
+                    <div class="col-sm-8">
+                        <a href="{{config.portal.contato.contatos.vestibular}}">vestita@ita.br</a>
+                    </div>
+                </div> --}}
+                <div class="row">
+                    <div class="col-sm-4">
+                        <b>{{translation.partials.contact.contacts}}</b>
+                    </div>
+                    <div class="col-sm-8">
+                        <a href="{{config.portal.contato.contatos.telefones}}" target="_blank">{{translation.partials.contact.phonesList}}</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <b>{{translation.partials.contact.extensions}}</b>
+                    </div>
+                    <div class="col-sm-8">
+                        <a href="{{config.portal.contato.contatos.ramais}}" target="_blank">{{translation.partials.contact.extensionsList}}</a>
+                    </div>
+                </div>
+            </address>
+        </div>
+    </div>
+</div>

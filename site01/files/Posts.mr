@@ -1,0 +1,63 @@
+// Welcome to MongoDB Runner editor, please keep 'db' instance. 
+// All methods which are compitable with MongoDB NodeJS driver can be used in this editor.
+// (http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html)
+db.collection('posts').distinct('country', { state: 'published', panel: 'coop', continent: 'americas' })
+
+db.collection('posts').find({ state: 'published', panel: 'coop', continent: 'americas' })
+
+db.collection('posts').findOne({ slug: 'catalogos-dos-cursos-de-graduacao' })
+
+// db.collection('posts').update(
+//    { _id: { $ne: null } }, 
+//     [
+//         { $set: { title: {pt:"$title",en:"$title"} } },
+//         { $set: { subtitle: {pt:"$subtitle",en:"$subtitle"} } },
+//         { $set: { caption: {pt:"$caption",en:"$caption"} } },
+//         { $set: { 
+//             content: { 
+//                 brief: {pt:"$content.brief",en:"$content.brief"} ,
+//                 extended: {pt:"$content.extended",en:"$content.extended"} } 
+//             }, 
+//         },
+//     ], 
+//     { multi: true }
+// )
+
+db.collection('posts').find(
+    { 
+        categories: { 
+            $all: [
+                '600456f37362146fd66e02fe'
+            ] 
+        } 
+    } 
+)
+
+db.collection('posts').version()
+
+
+// db.collection('posts').update(
+//     { categories: [] },
+//     [
+//         { $set: { categories: [ObjectId( '600456f37362146fd66e02fe' ) ] }, }
+//     ], 
+//     { multi: true }
+// )
+
+// SERVIDOR DE DESENVOLVIMENTO (validation.js)
+// db.collection('posts').update(
+//     { categories: { $in: ['600456f37362146fd66e02fe'] } }, 
+//     [ 
+//         { $set: { categories: [ObjectId( '600456f37362146fd66e02fe' ) ] }, }
+//     ], 
+//     { multi: true } 
+// )
+
+// SERVIDOR DE TESTES NO AMBIENTE ITA (test.js)
+// db.collection('posts').update(
+//     { categories: [] },
+//     [
+//         { $set: { categories: [ObjectId( '600752c79973ae058e39d84d' ) ] }, }
+//     ],
+//     { multi: true }
+// )

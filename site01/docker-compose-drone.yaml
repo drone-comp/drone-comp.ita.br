@@ -1,0 +1,23 @@
+services:
+  drone:
+    container_name: drone
+    image: drone:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.drone
+    expose:
+      - "3003"
+    networks:
+      - netlab01
+    volumes:
+      - $PWD/config:/drone/site01/config
+      - dronedata:/app/assets/static/core/uploads
+
+volumes:
+  dronedata:
+    name: dronedata
+    external: true
+
+networks:
+  netlab01:
+    external: true

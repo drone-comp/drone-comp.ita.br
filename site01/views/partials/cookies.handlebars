@@ -1,0 +1,19 @@
+{{#if config.cookies.enabled}}
+    <div id="cookie-banner" class="container-out collapse">
+        <div class="container">
+            <div class="call2action call2action-right call2action-colored">
+                <div class="call2action-heading">
+                    <div class="title">
+                        <h4>Cookies</h4>
+                    </div>
+                    <div class="text">
+                        <p>{{{translation.cookies.content.description}}}</p>
+                    </div>
+                </div>
+                <div class="call2action-content">
+                    <button type="button" class="cookie-accept btn btn-big">{{translation.cookies.content.button}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}

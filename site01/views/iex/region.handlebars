@@ -1,0 +1,150 @@
+<div id="page-content" role="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<div id="content">
+					<header class="devider-bottom devider-heavy devider-margin-medium">
+						<h1>{{translation.iex.region._title}}</h1>
+					</header>
+					<article class="post post-single post-type-text">
+						<div class="post-content">
+							<div class="content-left">
+								<div class="article-date">
+									<span class="type"></span>
+									<span class="day">{{moment data.today lang="{{language}}" format="D"}}</span>
+									<span class="month">{{moment data.today lang="{{language}}" format="MMM"}}</span>
+									<span class="year">{{moment data.today lang="{{language}}" format="YYYY"}}</span>
+								</div>
+							</div>
+							<div class="content-right">
+								<div class="text">
+									<div class="excerpt">{{translation.iex.region.mapHelp}}</div>
+									<ul class="article-details"></ul>
+									{{> world}}
+									<ul class="article-details"></ul>
+
+									<div class="accordion accordion-colored">
+										{{#eq filters.region "region"}}
+											<div>
+												<div class="accordion-heading">
+													<h5><a href="/{{language}}/iex/americas"><i class="fa fa-chevron-right"></i>{{translation.iex.region.americas}}</a></h5>
+												</div>
+												<div class="accordion-content">
+													<ul class="check">
+														{{#each data.americas}}
+															<li><a href="/{{../language}}/iex/local/{{this}}">{{this}}</a>
+														{{/each}}
+													</ul>
+												</div>
+											</div>
+											<div>
+												<div class="accordion-heading">
+													<h5><a href="/{{language}}/iex/europa"><i class="fa fa-chevron-right"></i>{{translation.iex.region.europa}}</a></h5>
+												</div>
+												<div class="accordion-content">
+													<ul class="check">
+														{{#each data.europa}}
+															<li><a href="/{{../language}}/iex/local/{{this}}">{{this}}</a>
+														{{/each}}
+													</ul>
+												</div>
+											</div>
+											<div>
+												<div class="accordion-heading">
+													<h5><a href="/{{language}}/iex/asia"><i class="fa fa-chevron-right"></i>{{translation.iex.region.asia}}</a></h5>
+												</div>
+												<div class="accordion-content">
+													<ul class="check">
+														{{#each data.asia}}
+															<li><a href="/{{../language}}/iex/local/{{this}}">{{this}}</a>
+														{{/each}}
+													</ul>
+												</div>
+											</div>
+											<div>
+												<div class="accordion-heading">
+													<h5><a href="/{{language}}/iex/africa"><i class="fa fa-chevron-right"></i>{{translation.iex.region.africa}}</a></h5>
+												</div>
+												<div class="accordion-content">
+													<ul class="check">
+														{{#each data.africa}}
+															<li><a href="/{{../language}}/iex/local/{{this}}">{{this}}</a>
+														{{/each}}
+													</ul>
+												</div>
+											</div>
+										{{/eq}}
+
+										{{#eq filters.region "americas"}}
+											<div class="active">
+												<div class="accordion-heading">
+													<h5><a href="/{{language}}/iex/americas"><i class="fa fa-chevron-right"></i>{{translation.iex.region.americas}}</a></h5>
+												</div>
+												<div class="accordion-content">
+													<ul class="check">
+														{{#each data.countries}}
+															<li><a href="/{{../language}}/iex/local/{{this}}">{{this}}</a>
+														{{/each}}
+													</ul>
+												</div>
+											</div>
+										{{/eq}}
+										{{#eq filters.region "europa"}}
+											<div class="active">
+												<div class="accordion-heading">
+													<h5><a href="/{{language}}/iex/europa"><i class="fa fa-chevron-right"></i>{{translation.iex.region.europa}}</a></h5>
+												</div>
+												<div class="accordion-content">
+													<ul class="check">
+														{{#each data.countries}}
+															<li><a href="/{{../language}}/iex/local/{{this}}">{{this}}</a>
+														{{/each}}
+													</ul>
+												</div>
+											</div>
+										{{/eq}}
+										{{#eq filters.region "asia"}}
+											<div class="active">
+												<div class="accordion-heading">
+													<h5><a href="/{{language}}/iex/asia"><i class="fa fa-chevron-right"></i>{{translation.iex.region.asia}}</a></h5>
+												</div>
+												<div class="accordion-content">
+													<ul class="check">
+														{{#each data.countries}}
+															<li><a href="/{{../language}}/iex/local/{{this}}">{{this}}</a>
+														{{/each}}
+													</ul>
+												</div>
+											</div>
+										{{/eq}}
+										{{#eq filters.region "africa"}}
+											<div class="active">
+												<div class="accordion-heading">
+													<h5><a href="/{{language}}/iex/africa"><i class="fa fa-chevron-right"></i>{{translation.iex.region.africa}}</a></h5>
+												</div>
+												<div class="accordion-content">
+													<ul class="check">
+														{{#each data.countries}}
+															<li><a href="/{{../language}}/iex/local/{{this}}">{{this}}</a>
+														{{/each}}
+													</ul>
+												</div>
+											</div>
+										{{/eq}}
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="sidebar" id="sidebar-right">
+
+					{{> noticias}}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

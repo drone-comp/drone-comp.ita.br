@@ -1,0 +1,35 @@
+\section{Seleção de Cores}\label{RS0002:colors}
+
+\subsection{Arquivo de configuração de cores}
+
+As cores utilizadas pelo portal, e principal pelo painel administrativo, são definidas de forma centralizada em arquivos de configuração. Estes arquivos podem ser modificados com auxílio de um operador e/ou desenvolvedor (ver Guias de Operação e Desenvolvimento)
+
+\subsubsection{Configuração do Portal}
+
+Na linha $21$ da \cref{RS0002:code:head} está a definição de cores a ser utilizada pelo portal o Painel Administrativo.
+
+\begin{code}
+    \inputminted[label=head.handlebars]{html}{../RS0002/anexos/head.handlebars}
+    \caption{Definição da configuração de cores}\label{RS0002:code:head}
+\end{code}
+
+Existem algumas opções disponíveis na pasta $\\assets\\static\\css\\color$ que podem ser aplicadas, porém o padrão de cores selecionados foi o mais adequado ao portal no momento:
+
+\begin{itemize}
+    \item \textbf{Azul} - $blue.css$
+    \item \textbf{Preto \& Branco} - $dark.css$
+    \item \textbf{Vermelho} - $red.css$
+    \item \textbf{Azul-turquesa} - $teal$
+\end{itemize}
+
+
+\subsubsection{Definições de cores}
+
+Cada um dos arquivos disponíveis possui exatamente a mesma estrutura da \cref{RS0002:code:blue} que corresponde à cor atualmente aplicada ao portal (\textbf{Azul}).
+
+Para customizar um determinado elemento, basta modificar este arquivo, localizar a identificação do elemento e atribuir o valor hexadecimal da cor desejada. Os códigos de cores podem ser consultados na internet (ver \href{https://html-color.codes}{HTML Color Codes}).
+
+\begin{code}
+    \inputminted[label=blue.css]{css}{../RS0002/anexos/blue.css}
+    \caption{Configuração de cores (blue)}\label{RS0002:code:blue}
+\end{code}

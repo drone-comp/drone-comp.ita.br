@@ -1,0 +1,298 @@
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover,
+a,
+.dropcap.clean {
+	color: #007aff;
+}
+.highlight {
+	background-color: #007aff;
+}
+
+
+
+/* :::::::::::: */
+/* : Dropcaps : */
+/* :::::::::::: */
+.dropcap.clean {
+	color: #007aff;
+}
+/* :::::::::::::::: */
+/* : END Dropcaps : */
+/* :::::::::::::::: */
+
+
+
+/* ::::::::::::: */
+/* : Bockquote : */
+/* ::::::::::::: */
+blockquote:before,
+blockquote .author {
+	color: #007aff;
+}
+/* ::::::::::::::::: */
+/* : END Bockquote : */
+/* ::::::::::::::::: */
+
+
+
+/* :::::::: */
+/* : List : */
+/* :::::::: */
+.arrow li:before, .circle li:before, .check li:before,
+.plus li:before, .dash li:before {
+	color: #007aff;
+}
+/* :::::::::::: */
+/* : END List : */
+/* :::::::::::: */
+
+
+
+/* ::::::::::: */
+/* : Buttons : */
+/* ::::::::::: */
+.btn {
+	background-color: #007aff;
+	border: 1px solid #007aff;
+}
+	.btn:hover {
+		background-color: #3395ff;
+		border-color: #3395ff;
+	}
+	.btn:active {
+		border-color: #007aff;
+	}
+/* ::::::::::::::: */
+/* : END Buttons : */
+/* ::::::::::::::: */
+
+
+
+/* :::::::::::: */
+/* : Progress : */
+/* :::::::::::: */
+.skill .bar,
+.progress .bar {
+	background-color: #007aff;
+}
+/* :::::::::::::::: */
+/* : END Progress : */
+/* :::::::::::::::: */
+
+
+
+/* :::::::: */
+/* : Form : */
+/* :::::::: */
+select:focus,
+.form-control:focus {
+	border-color: #007aff;
+	-webkit-box-shadow: 0 0 0 2px #007aff;
+	box-shadow: 0 0 0 2px #007aff;
+}
+/* :::::::::::: */
+/* : END Form : */
+/* :::::::::::: */
+
+
+
+/* ::::::::::::::: */
+/* : Breadceumbs : */
+/* ::::::::::::::: */
+body #page-header .breadcrumbs ul li.current a,
+body #page-header .breadcrumbs ul li a:hover {
+	color: #007aff;
+}
+/* ::::::::::::::::::: */
+/* : END Breadceumbs : */
+/* ::::::::::::::::::: */
+
+
+
+/* :::::::::::::::: */
+/* : Filter & Nav : */
+/* :::::::::::::::: */
+.project-filter ul li a:hover,
+.project-filter ul li a.active {
+	color: #007aff;
+}
+.project-filter ul:hover li.selector {
+	background-color: #007aff;
+}
+/* :::::::::::::::::::: */
+/* : END Filter & Nav : */
+/* :::::::::::::::::::: */
+
+
+
+/* Twitter */
+.tweet-heading .title a:hover,
+.tweet-content .tweet-actions a:hover {
+	color: #007aff;
+}
+
+/* Main menu */
+#main-menu ul.megamenu-category .category-content .iconbox:hover .title > * {
+	color: #007aff;
+}
+@media (min-width: 992px) {
+	#main-menu > li.active > a,
+	#main-menu > li:hover > a {
+		color: #007aff;
+	}
+}
+
+/* Section title */
+.title.title-section .sticker .icon {
+	background-color: #007aff;
+}
+.title.title-section .sticker .icon:after {
+	border-top-color: #007aff;
+}
+/*Nav list */
+#page-content .nav ul li a:hover {
+	color: #007aff;
+}
+
+/* Date */
+.article-date {
+	background-color: #007aff;
+}
+.article-date:after {
+	border-top-color: #007aff;
+}
+
+/* Article Nav */
+.article-nav ul li.selector a:hover {
+	background-color: #007aff;
+}
+.article-nav a:hover,
+.article-nav a:hover:before,
+#page-content .article-nav a:hover,
+#page-content .article-nav a:hover:before {
+	color: #007aff;
+}
+
+/* Tags */
+#footer .tags p a:hover,
+.tags p a:hover {
+	background: #007aff;
+}
+
+
+/* :::: */
+/* : POST TYPE : Single
+/* :::: */
+.post-content > .type {
+	background-color: #007aff;
+}
+.post-content > .type:after {
+	border-top-color: #007aff;
+}
+
+/* Timeline */
+.timeline li.year {
+	background-color: #007aff;
+}
+
+
+
+/* :::::::::::: */
+/* : Icon Box : */
+/* :::::::::::: */
+
+/* Style 2 & 3*/
+.container-dark .iconbox.iconbox-style2 .iconbox-heading .icon:before,
+.container-dark .iconbox.iconbox-style3 .iconbox-heading .icon:before,
+.container-dark .iconbox.iconbox-style2 .iconbox-heading .icon:after,
+.container-dark .iconbox.iconbox-style3 .iconbox-heading .icon:after,
+.container-image .iconbox.iconbox-style2 .iconbox-heading .icon:before,
+.container-image .iconbox.iconbox-style3 .iconbox-heading .icon:before,
+.container-image .iconbox.iconbox-style2 .iconbox-heading .icon:after,
+.container-image .iconbox.iconbox-style3 .iconbox-heading .icon:after {
+	background-color: rgba(0, 122, 255, 0.5);
+}
+/* :::::::::::::::: */
+/* : END Icon Box : */
+/* :::::::::::::::: */
+
+
+
+/* ::::::::::::::::: */
+/* : Call 2 Action : */
+/* ::::::::::::::::: */
+
+/* Colored */
+.call2action.call2action-colored {
+	border-color: #007aff;
+	background-color: #3395ff;
+}
+/* ::::::::::::::::::::: */
+/* : END Call 2 Action : */
+/* ::::::::::::::::::::: */
+
+
+
+/* ::::::::::::::: */
+/* : Testimonial : */
+/* ::::::::::::::: */
+
+/* Colored */
+.testimonial-wrap.testimonial-colored .testimonial-inner {
+	border-color: #007aff;
+	background-color: #3395ff;
+}
+.testimonial-wrap.testimonial-colored .testimonial-outer:before {
+	border-top-color: #007aff;
+}
+	.testimonial-wrap.testimonial-colored .testimonial-outer:after {
+		border-top-color:  #3395ff;
+	}
+/* ::::::::::::::::::: */
+/* : END Testimonial : */
+/* ::::::::::::::::::: */
+
+
+
+/* ::::::: */
+/* : Tab : */
+/* ::::::: */
+
+/* Colored */
+.tab.tab-colored .tab-heading {
+	border-color: #007aff;
+	background-color: #3395ff;
+}
+	.tab.tab-colored .tab-heading li {
+		border-color: #007aff;
+	}
+		.tab.tab-colored .tab-heading li:hover a,
+		.tab.tab-colored .tab-heading li.current a {
+			background-color: #007aff;
+		}
+/* ::::::::::: */
+/* : END Tab : */
+/* ::::::::::: */
+
+
+
+/* ::::::::::::: */
+/* : Accordion : */
+/* ::::::::::::: */
+.accordion > div.active .accordion-heading a,
+.accordion > div .accordion-heading a:hover {
+	color: #007aff;
+}
+
+/* Colored */
+.accordion.accordion-colored .accordion-heading {
+	border-color: #007aff;
+	background-color: #3395ff;
+}
+.accordion.accordion-colored .active .accordion-heading a,
+.accordion.accordion-colored .accordion-heading a:hover {
+	background-color: #007aff;
+}
+/* ::::::::::::::::: */
+/* : END Accordion : */
+/* ::::::::::::::::: */

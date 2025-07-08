@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{{#if language}}
+<html lang="{{language}}">
+{{else}}
+<html lang="pt">
+{{/if}}
+{{> head }}
+
+<body class="index">
+
+	{{> sideOptions }}
+
+	<header id="header">
+
+		{{> barraBrasil }}
+
+		{{> nav }}
+
+	</header>
+
+	{{{body}}}
+
+	<footer id="footer">
+
+		{{> bottom }}
+
+		{{> footerBrasil }}
+
+		{{> credits }}
+
+	</footer>
+
+	<a class="btn btn-icon-top" id="toTop" href="#"></a>
+
+	{{> scripts }}
+
+</body>
+
+</html>

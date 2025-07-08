@@ -1,0 +1,84 @@
+\documentclass[10pt,twoside,report,glossaries,listings,nolistformulas,nolisttables,nolistalgorithms,final]{gt-report}
+
+\usepackage[sfdefault,extralight]{FiraSans}
+
+%
+% Definir como "digital" ou "printed" para ter a versão para ser distribuída digitalmente ou impressa
+% Cada pesquisador define o conteúdo a ser impresso ou não com blocos:
+%
+% \begin{shownto}{digital}
+% . . .
+% \end{shownto}{digital}
+%
+\DefCurrentAudience{printed}
+
+\graphicspath{
+    {../_common/},
+    {../RS0000/anexos/},
+    {../RS0003/anexos/},
+    {../RS0004/anexos/},
+    {../RS0005/anexos/},
+}
+
+\pagestyle{fancy}
+
+\addbibresource{../_common/Referencias/bibliografia.bib}
+
+\addbibresource{../RS0000/_bibliography.bib}
+\addbibresource{../RS0003/_bibliography.bib}
+\addbibresource{../RS0004/_bibliography.bib}
+\addbibresource{../RS0005/_bibliography.bib}
+
+\makeglossaries
+\loadglsentries{../_common/Referencias/glossario}
+
+\begin{titlepage}
+    \title{\textbf{Portal Institucional do ITA \\ \normalsize{Manual Técnico}}}
+    \institution{ITA - Instituto Tecnológico de Aeronáutica}
+    \department{IEC - Divisão de Ciência da Computação}
+    \author{Carla Cursino\orcidIcon{0000-0002-7718-5897}\\
+    %Prof. Dr. Luiz Alberto Vieira Dias\orcidIcon{0000-0002-6544-7458}\\
+}
+
+\end{titlepage}
+
+\begin{document}
+
+\usCopy{RS0000}{Arquitetura}{..}{}
+\usCopy{RS0004}{Guia do Operador}{..}{}
+\usCopy{RS0003}{Guia do Desenvolvedor}{..}{}
+\usCopy{RS0005}{Controle de Acessos}{..}{}
+
+% \clearpage
+
+% \begin{appendices}\label{sec:appendix}
+%     \renewcommand\thechapter{\Alph{chapter}}
+%     \pretocmd{\chapter}{%
+%         \clearpage
+%         \pagenumbering{arabic}%
+%         \renewcommand*{\thepage}{\thechapter\arabic{page}}%
+%     }{}{}
+
+%     \paragraph{Observações sobre arquivos anexos}
+
+%     \begin{displayquote}\footnotesize
+%         \begin{enumerate}
+%             \item Anexos de arquivo são um recurso da especificação PDF 1.3. Eles não serão mostrados em visualizadores de PDF que não suportam a especificação PDF 1.3. (A versão 4.0 do Adobe Acrobat é a primeira versão desse programa que a suporta.);
+%             \item Mesmo algumas instalações que supostamente suportam a especificação PDF 1.3 não suportam anexos de arquivo. Pelo que sabemos, versões muito antigas do Adobe Acrobat Reader (a versão gratuita e de visualização do Adobe Acrobat) não parecem suportar nenhuma anotação, exceto as de texto;
+%             \item Mesmo alguns visualizadores que suportam especificação PDF 1.3 e anexos de arquivos não os suportam em todas as circunstâncias. Por exemplo, algumas versões do Adobe Acrobat para Windows, quando funcionam como um \textit{plugin} de navegador da Web, apresentam uma mensagem de erro quando um ícone de anexo de arquivo é ativado;
+%             \item Mesmo nas circunstâncias em que os anexos de arquivos são suportados, o suporte pode apresentar falhas. Por exemplo, algumas versões do Adobe Acrobat para Windows alteram um ícone personalizado para o ícone padrão quando ele é selecionado;
+%             \item Embora os ícones de anexo de arquivo com aparência personalizada tenham sido impressos com boa qualidade nas versões mais antigas do Adobe Acrobat, a Adobe introduziu uma falha a partir do Adobe Acrobat 6.0 que impede a impressão dos ícones do anexo. Infelizmente, como o Adobe Acrobat não possui a capacidade, de no arquivo, habilitar aparências personalizadas para ícones de anexos, é improvável que essa falha seja corrigida.
+%             %\item Caso não consiga obter um dos anexos deste relatório, solicite sua cópia enviando e-mail para o autor \url{gomesjm@ita.br}.
+%         \end{enumerate}
+%     \end{displayquote}\normalsize
+
+%     \clearpage
+
+%     \usAnnex{RS0000}{}{..}
+%     \usAnnex{RS0003}{}{..}
+%     \usAnnex{RS0004}{}{..}
+%     \usAnnex{RS0005}{}{..}
+
+% \end{appendices}
+
+\end{document}
