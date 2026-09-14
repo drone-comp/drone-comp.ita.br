@@ -10,11 +10,11 @@ role: Researcher
 
 # Organizations/Affiliations
 organizations:
-- name: Columbia University in the City of New York
-  url: "https://www.columbia.edu/"
+- name: IFSULDEMINAS - Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas
+  url: "https://portal.ifsuldeminas.edu.br/index.php"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Financial Computing, Data Science, Network Analysis, Quantitative Finance.
+bio: My research interests include LLMs, Financial Computing, Data Science, Network Analysis, Quantitative Finance.
 
 interests:
 - Financial Computing
@@ -65,6 +65,5 @@ user_groups:
 - Researchers
 ---
 
-Tharsis T. P. Souza received the Ph.D. degree in Computer Science from 
-UCL, University of London, U.K. He is currently a Lecturer at Columbia University, 
-Faculty member of the MSc. in Applied Analytics program. 
+Tharsis T. P. Souza received his Ph.D. degree in Computer Science from 
+UCL, University of London, U.K. 
